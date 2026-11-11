@@ -12,10 +12,10 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| pipeline | 38 | 34 | name 85%, id 74%, created_at 62% | pipelines 20, workflows 16, pipeline 5, definitions 2 |
-| run | 27 | 24 | status 79%, id 75%, created_at 62%, started_at 58% | runs 16, builds 14, executions 6, run 5 |
+| pipeline | 38 | 34 | name 88%, id 76%, created_at 59% | pipelines 20, workflows 16, pipeline 5, definitions 2 |
+| run | 27 | 24 | status 83%, id 79%, created_at 67%, started_at 58% | runs 16, builds 14, executions 6, run 5 |
 | job | 9 | 7 | name 71%, created_at 57%, id 57%, status 57% | jobs 6, stages 3, steps 2 |
-| artifact | 14 | 12 | id 83%, name 50% | artifacts 13, artifact 2 |
+| artifact | 14 | 12 | id 83%, name 58%, size 50% | artifacts 13, artifact 2 |
 | environment | 10 | 7 | name 100%, id 86%, created_at 71%, description 57% | environments 9, envs 1 |
 | deployment | 54 | 48 | id 65%, status 60% | deployments 39, deploy 15, deploys 6, deployment 4 |
 

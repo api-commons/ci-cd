@@ -36,16 +36,15 @@ concepts:
       - createdAt
       started_at: startedAt
       branch: branch
+      pipeline_id:
+      - pipeline
+      - projectID
+      commit_sha: commitSha
       finished_at:
       - stoppedAt
       - completedAt
       - finishedAt
       - completed
-      name: name
-      pipeline_id:
-      - pipeline
-      - projectID
-      commit_sha: commitSha
       trigger:
       - triggered_by
       - triggeredBy
@@ -76,15 +75,20 @@ concepts:
     - artifacts
     - artifact
     properties:
-      id: id
+      id:
+      - uuid
+      - id
       name:
       - name
       - title
+      size: size
       metadata:
+      - labels
       - metadata
       - tags
       status: status
       updated_at:
+      - lastModified
       - updated
       - updatedAt
     core_coverage: 1.0

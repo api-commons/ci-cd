@@ -33,7 +33,9 @@ concepts:
   artifact:
     path_segment:
     - artifacts
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: name
+      size: size
+    core_coverage: 0.667
     evidence:
     - openapi/_original/teamcity-rest-api.yml#GET /builds/{buildLocator}/artifacts

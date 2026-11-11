@@ -50,7 +50,7 @@ concepts:
     properties:
       id: id
       metadata: metadata
-    core_coverage: 0.5
+    core_coverage: 0.333
     evidence:
     - openapi/_original/esper-openapi.json#DELETE /v2/tenant-apps/{appId}/versions/{versionId}/artifacts/{artifactId}
     - openapi/_original/esper-openapi.json#POST /v2/tenant-apps/{appId}/versions/{versionId}/artifacts

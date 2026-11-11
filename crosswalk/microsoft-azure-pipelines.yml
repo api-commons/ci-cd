@@ -32,9 +32,9 @@ concepts:
       created_at: createdDate
       started_at: startTime
       branch: sourceBranch
-      name: name
       pipeline_id: pipeline
       commit_sha: sourceVersion
+      name: name
       number: buildNumber
       trigger: reason
       metadata: tags
@@ -51,7 +51,7 @@ concepts:
     properties:
       id: id
       name: name
-    core_coverage: 1.0
+    core_coverage: 0.667
     evidence:
     - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/builds/{buildId}/artifacts
     - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/builds/{buildId}/artifacts/{artifactName}

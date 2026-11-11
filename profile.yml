@@ -74,16 +74,16 @@ concepts:
     properties:
     - name: name
       tier: core
-      providers: 29
-      share: 0.853
+      providers: 30
+      share: 0.882
       type: string
       spellings:
       - name
       - title
     - name: id
       tier: core
-      providers: 25
-      share: 0.735
+      providers: 26
+      share: 0.765
       type: string
       spellings:
       - id
@@ -93,8 +93,8 @@ concepts:
       - build_number
     - name: created_at
       tier: core
-      providers: 21
-      share: 0.618
+      providers: 20
+      share: 0.588
       type: string
       spellings:
       - created_at
@@ -105,8 +105,8 @@ concepts:
       - creationDate
     - name: status
       tier: extended
-      providers: 15
-      share: 0.441
+      providers: 16
+      share: 0.471
       type: string
       spellings:
       - status
@@ -138,18 +138,18 @@ concepts:
       spellings:
       - project
       - repository
-    long_tail_count: 222
+    long_tail_count: 220
     long_tail_sample:
     - metadata
     - pipeline_id
     - trigger
     - type
-    - finished_at
-    - started_at
-    - steps
-    - commit_sha
     - configuration
+    - finished_at
     - path
+    - started_at
+    - commit_sha
+    - steps
     - badge_url
     - kind
     - parameters
@@ -171,11 +171,11 @@ concepts:
     - owner
     - owner_id
     - queue_status
-    - stages
     - timeout_seconds
     - uri
     - aasm_state
     - account_id
+    - action_name
     - admins
     - api_version
     - app_branch_runs
@@ -221,8 +221,8 @@ concepts:
     properties:
     - name: status
       tier: core
-      providers: 19
-      share: 0.792
+      providers: 20
+      share: 0.833
       type: string
       spellings:
       - status
@@ -232,16 +232,16 @@ concepts:
       - phase
     - name: id
       tier: core
-      providers: 18
-      share: 0.75
+      providers: 19
+      share: 0.792
       type: string
       spellings:
       - id
       - slug
     - name: created_at
       tier: core
-      providers: 15
-      share: 0.625
+      providers: 16
+      share: 0.667
       type: string
       spellings:
       - created_at
@@ -261,13 +261,36 @@ concepts:
       - run_started_at
     - name: branch
       tier: extended
+      providers: 11
+      share: 0.458
+      type: string
+      spellings:
+      - branch
+      - head_branch
+      - sourceBranch
+    - name: pipeline_id
+      tier: extended
+      providers: 11
+      share: 0.458
+      type: string
+      spellings:
+      - pipeline
+      - workflow_id
+      - projectID
+      - pipeline_id
+      - pipelineId
+      - buildTypeId
+    - name: commit_sha
+      tier: extended
       providers: 10
       share: 0.417
       type: string
       spellings:
-      - branch
-      - sourceBranch
-      - head_branch
+      - head_sha
+      - commit
+      - sourceVersion
+      - commitSha
+      - commit_sha
     - name: finished_at
       tier: extended
       providers: 10
@@ -290,29 +313,6 @@ concepts:
       spellings:
       - name
       - displayName
-    - name: pipeline_id
-      tier: extended
-      providers: 10
-      share: 0.417
-      type: string
-      spellings:
-      - pipeline
-      - workflow_id
-      - projectID
-      - pipeline_id
-      - pipelineId
-      - buildTypeId
-    - name: commit_sha
-      tier: extended
-      providers: 9
-      share: 0.375
-      type: string
-      spellings:
-      - commit
-      - head_sha
-      - sourceVersion
-      - commitSha
-      - commit_sha
     - name: number
       tier: extended
       providers: 9
@@ -365,7 +365,7 @@ concepts:
       spellings:
       - created_by
       - createdBy
-    long_tail_count: 494
+    long_tail_count: 490
     long_tail_sample:
     - duration
     - repository
@@ -374,7 +374,6 @@ concepts:
     - error_message
     - project
     - scheduled_at
-    - steps
     - trigger_type
     - web_url
     - actions
@@ -400,13 +399,14 @@ concepts:
     - logs
     - org_id
     - outputs
-    - page_count
     - parameters
     - path
     - priority
     - queue_time
     - requested_by
     - requested_for
+    - resources
+    - retained_by_release
   job:
     segments_seen:
       jobs: 6
@@ -479,10 +479,9 @@ concepts:
       type: integer
       spellings:
       - run_id
-    long_tail_count: 41
+    long_tail_count: 40
     long_tail_sample:
     - commit_sha
-    - jobs
     - log_url
     - metadata
     - run_attempt
@@ -521,6 +520,7 @@ concepts:
     - step_id
     - uses
     - waiting_for
+    - workflow_name
   artifact:
     segments_seen:
       artifacts: 13
@@ -553,15 +553,25 @@ concepts:
       spellings:
       - id
       - artifactId
+      - uuid
       - artifactID
     - name: name
       tier: core
-      providers: 6
-      share: 0.5
+      providers: 7
+      share: 0.583
       type: string
       spellings:
       - name
       - title
+    - name: size
+      tier: core
+      providers: 6
+      share: 0.5
+      type: integer
+      spellings:
+      - size
+      - size_in_bytes
+      - file_size
     - name: created_at
       tier: extended
       providers: 4
@@ -580,15 +590,6 @@ concepts:
       - path
       - archive_download_url
       - download_url
-    - name: size
-      tier: extended
-      providers: 4
-      share: 0.333
-      type: integer
-      spellings:
-      - size_in_bytes
-      - file_size
-      - size
     - name: metadata
       tier: extended
       providers: 3
@@ -596,6 +597,7 @@ concepts:
       type: object
       spellings:
       - metadata
+      - labels
       - tags
     - name: status
       tier: extended
@@ -612,9 +614,10 @@ concepts:
       type: string
       spellings:
       - updated_at
+      - lastModified
       - updated
       - updatedAt
-    long_tail_count: 104
+    long_tail_count: 123
     long_tail_sample:
     - artifact_type
     - created_by
@@ -629,6 +632,7 @@ concepts:
     - applied_rule_id
     - applied_rule_name
     - applied_rule_version_id
+    - artifact_key
     - artifact_name
     - artifact_uri
     - artifactory
@@ -638,24 +642,23 @@ concepts:
     - build_pipeline_id
     - classified
     - compliance_id
-    - component_filter
     - components_count
+    - content
+    - deleted_at
+    - deleted_by
     - deny_list_violation_count
     - deployment
+    - deployment_metadata
     - deployment_status
     - deployments
     - description
     - digest
+    - digest_count
     - dirname
+    - downloads_count
     - dsse_envelope_path
     - enforcement
     - enforcement_id
-    - environment_type
-    - execution_name
-    - executions
-    - external_id
-    - failed
-    - file
   environment:
     segments_seen:
       environments: 9
@@ -722,6 +725,13 @@ concepts:
       type: string
       spellings:
       - description
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - status
     - name: type
       tier: extended
       providers: 3
@@ -729,13 +739,13 @@ concepts:
       type: string
       spellings:
       - type
-    long_tail_count: 103
+    long_tail_count: 95
     long_tail_sample:
     - color
     - created_by
     - deleted
+    - environment_name
     - metadata
-    - status
     - updated_at
     - agent_token
     - allowed_methods
@@ -750,6 +760,7 @@ concepts:
     - cloud_account_secret_id
     - cloud_storage
     - cluster_code
+    - cluster_id
     - cluster_name
     - cluster_state
     - common_environment_variables
@@ -764,13 +775,12 @@ concepts:
     - enable_auto_sign_off
     - enabled
     - env_group_ids
-    - environment_name
     - environment_queue_limit
-    - environment_values
     - features
     - from_deploy
     - from_deploy_id
-    - global
+    - global_variables
+    - harness_version
   deployment:
     segments_seen:
       deployments: 39
@@ -874,7 +884,7 @@ concepts:
       - tag
       - release
       - image
-    long_tail_count: 519
+    long_tail_count: 523
     long_tail_sample:
     - branch
     - description
@@ -914,5 +924,5 @@ concepts:
     - role
     - services
     - settings
-    - size
     - started_on
+    - status_description

@@ -27,9 +27,9 @@ concepts:
       created_at: created_at
       started_at: run_started_at
       branch: head_branch
-      name: name
       pipeline_id: workflow_id
       commit_sha: head_sha
+      name: name
       number: run_number
       trigger:
       - event
@@ -64,9 +64,9 @@ concepts:
     properties:
       id: id
       name: name
+      size: size_in_bytes
       created_at: created_at
       download_url: archive_download_url
-      size: size_in_bytes
       updated_at: updated_at
     core_coverage: 1.0
     evidence:

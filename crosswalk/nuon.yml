@@ -29,15 +29,15 @@ concepts:
       id: id
       created_at: created_at
       started_at: started_at
+      pipeline_id: workflow_id
+      commit_sha:
+      - commit_sha
+      - head_sha
       finished_at:
       - finished
       - finished_at
       - completed_at
       name: name
-      pipeline_id: workflow_id
-      commit_sha:
-      - commit_sha
-      - head_sha
       metadata:
       - metadata
       - labels

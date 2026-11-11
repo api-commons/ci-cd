@@ -9,8 +9,7 @@ concepts:
     properties:
       name: name
       id: id
-      created_at: created_at
-    core_coverage: 1.0
+    core_coverage: 0.667
     evidence:
     - openapi/_original/sevalla-openapi.yml#GET /pipelines
     - openapi/_original/sevalla-openapi.yml#POST /pipelines

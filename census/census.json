@@ -90,12 +90,6 @@
      "POST collection"
     ],
     "properties": {
-     "page": "integer",
-     "values": "array",
-     "size": "integer",
-     "pagelen": "integer",
-     "next": "string",
-     "previous": "string",
      "type": "string",
      "uuid": "string",
      "build_number": "integer",
@@ -281,10 +275,7 @@
     "properties": {
      "state": "string",
      "startedAt": "string",
-     "finishedAt": "string",
-     "steps": "array",
-     "replica": "string",
-     "server": "string"
+     "finishedAt": "string"
     },
     "evidence": [
      "openapi/_original/codesphere-openapi-original.json#GET /workspaces/{workspaceId}/pipeline/{stage}"
@@ -405,8 +396,6 @@
      "GET item"
     ],
     "properties": {
-     "total_count": "integer",
-     "workflows": "array",
      "badge_url": "string",
      "created_at": "string",
      "deleted_at": "string",
@@ -434,8 +423,6 @@
      "GET item"
     ],
     "properties": {
-     "total_count": "integer",
-     "workflows": "array",
      "id": "integer",
      "node_id": "string",
      "name": "string",
@@ -460,8 +447,10 @@
      "GET collection"
     ],
     "properties": {
-     "total_count": "integer",
-     "workflows": "array"
+     "id": "integer",
+     "name": "string",
+     "path": "string",
+     "state": "string"
     },
     "evidence": [
      "openapi/_original/github-enterprise-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows"
@@ -802,7 +791,10 @@
      "test": "object",
      "lastUpdated": "number",
      "created": "number",
-     "valid": "boolean"
+     "valid": "boolean",
+     "actionName": "string",
+     "configuration": "object",
+     "error": "string"
     },
     "evidence": [
      "openapi/_original/moogsoft-workflow-engine-service-openapi.yaml#DELETE /v1/workflows/{id}",
@@ -992,8 +984,9 @@
      "wf_id": "string",
      "working_directory": "string",
      "yaml_file_name": "string",
-     "blocks": "array",
-     "pipeline": "object",
+     "block_id": "string",
+     "build_req_id": "string",
+     "jobs": "array",
      "initial_ppl_id": "string",
      "requester_id": "string",
      "triggered_by": "string",
@@ -1019,9 +1012,7 @@
     "properties": {
      "id": "string",
      "name": "string",
-     "stages": "array",
-     "preview_enabled": "boolean",
-     "created_at": "string",
+     "order": "integer",
      "project_id": "string"
     },
     "evidence": [
@@ -1071,8 +1062,6 @@
      "GET item"
     ],
     "properties": {
-     "count": "integer",
-     "buildType": "array",
      "id": "string",
      "name": "string",
      "description": "string",
@@ -1226,8 +1215,15 @@
      "POST collection"
     ],
     "properties": {
-     "builds": "array",
-     "buildsNotFound": "array",
+     "id": "string",
+     "arn": "string",
+     "buildNumber": "integer",
+     "startTime": "string",
+     "endTime": "string",
+     "currentPhase": "string",
+     "buildStatus": "string",
+     "projectName": "string",
+     "sourceVersion": "string",
      "ids": "array"
     },
     "evidence": [
@@ -1276,8 +1272,15 @@
      "POST collection"
     ],
     "properties": {
-     "builds": "array",
-     "buildsNotFound": "array",
+     "id": "string",
+     "arn": "string",
+     "buildNumber": "integer",
+     "startTime": "string",
+     "endTime": "string",
+     "currentPhase": "string",
+     "buildStatus": "string",
+     "projectName": "string",
+     "sourceVersion": "string",
      "ids": "array"
     },
     "evidence": [
@@ -1608,8 +1611,9 @@
      "POST collection"
     ],
     "properties": {
-     "runId": "string",
-     "warnings": "array",
+     "code": "string",
+     "message": "string",
+     "field": "string",
      "scmRef": "string",
      "workflowName": "string",
      "runNumber": "integer",
@@ -1894,8 +1898,12 @@
      "GET collection"
     ],
     "properties": {
-     "runs": "array",
-     "totalCount": "integer"
+     "runId": "integer",
+     "runName": "string",
+     "projectId": "integer",
+     "createdBy": "string",
+     "createdOn": "string",
+     "status": "string"
     },
     "evidence": [
      "openapi/_original/dream-sports-checkmate-openapi.yml#GET /api/v1/runs"
@@ -2129,9 +2137,7 @@
      "trigger_event": "string",
      "trigger_user": "object",
      "updated": "string",
-     "workflow_id": "string",
-     "total_count": "integer",
-     "workflow_runs": "array"
+     "workflow_id": "string"
     },
     "evidence": [
      "openapi/_original/openapi.json#DELETE /repos/{owner}/{repo}/actions/runs/{run_id}",
@@ -2150,8 +2156,6 @@
      "GET item"
     ],
     "properties": {
-     "total_count": "integer",
-     "workflow_runs": "array",
      "actor": "object",
      "completed_at": "string",
      "conclusion": "string",
@@ -2197,8 +2201,6 @@
      "GET item"
     ],
     "properties": {
-     "total_count": "integer",
-     "workflow_runs": "array",
      "id": "integer",
      "name": "string",
      "node_id": "string",
@@ -2244,8 +2246,14 @@
      "GET collection"
     ],
     "properties": {
-     "total_count": "integer",
-     "workflow_runs": "array"
+     "id": "integer",
+     "name": "string",
+     "head_branch": "string",
+     "head_sha": "string",
+     "status": "string",
+     "conclusion": "string",
+     "workflow_id": "integer",
+     "created_at": "string"
     },
     "evidence": [
      "openapi/_original/github-enterprise-openapi.yml#GET /repos/{owner}/{repo}/actions/runs"
@@ -2311,10 +2319,6 @@
      "POST collection"
     ],
     "properties": {
-     "builds": "array",
-     "nextPageToken": "string",
-     "name": "string",
-     "done": "boolean",
      "id": "string",
      "projectId": "string",
      "status": "string",
@@ -2328,7 +2332,9 @@
      "images": "array",
      "logUrl": "string",
      "substitutions": "object",
-     "tags": "array"
+     "tags": "array",
+     "name": "string",
+     "done": "boolean"
     },
     "evidence": [
      "openapi/_original/cloud-build-api-openapi.yml#GET /projects/{projectId}/builds",
@@ -2355,8 +2361,11 @@
      "gradle": "object",
      "maven": "object",
      "npm": "object",
-     "summary": "object",
-     "workUnits": "array"
+     "name": "string",
+     "duration": "object",
+     "outcome": "object",
+     "executions": "array",
+     "children": "array"
     },
     "evidence": [
      "openapi/_original/gradle-develocity-openapi.yaml#GET /api/builds",
@@ -2378,8 +2387,6 @@
      "PUT item"
     ],
     "properties": {
-     "executions": "array",
-     "total": "integer",
      "approvals": "array",
      "completedInstanceIds": "array",
      "events": "array",
@@ -2405,10 +2412,6 @@
      "retriggerable": "boolean",
      "trigger_type": "string",
      "webhook_id": "integer",
-     "itemCount": "integer",
-     "pageCount": "integer",
-     "pageIndex": "integer",
-     "pageSize": "integer",
      "retriggerOf": "integer",
      "triggerType": "string",
      "webhookId": "integer",
@@ -2461,14 +2464,11 @@
      "sbomCount": "integer",
      "createPipelineResponse": "object",
      "stageID": "string",
-     "description": "string",
-     "experimentSpec": "array",
-     "identifier": "string",
-     "name": "string",
-     "tags": "object",
+     "expectedResilienceScore": "number",
+     "experimentID": "string",
+     "experimentName": "string",
      "accountID": "string",
      "estimatedTime": "integer",
-     "experimentID": "string",
      "experimentIdentity": "string",
      "experimentRunID": "string",
      "finishedAt": "integer",
@@ -2490,7 +2490,6 @@
      "errorResponse": "string",
      "executionData": "string",
      "experimentIdentifier": "string",
-     "experimentName": "string",
      "experimentTags": "array",
      "experimentType": "string",
      "experimentYaml": "string",
@@ -2519,6 +2518,7 @@
      "experimentStatus": "string",
      "infra": "object",
      "resilienceScore": "string",
+     "tags": "array",
      "targetService": "string",
      "notifyIDs": "array",
      "exists": "boolean"
@@ -2694,8 +2694,14 @@
      "endedAt": "string",
      "durationSeconds": "integer",
      "createdAt": "string",
-     "build": "object",
-     "issues": "array",
+     "issue_id": "string",
+     "severity": "string",
+     "summary": "string",
+     "description": "string",
+     "issue_type": "string",
+     "provider": "string",
+     "cves": "array",
+     "impacted_artifacts": "array",
      "build_name": "string",
      "build_number": "string"
     },
@@ -2792,11 +2798,7 @@
      "durationMs": "integer",
      "labels": "object",
      "runningContext": "object",
-     "output": "string",
-     "outputType": "string",
      "errorMessage": "string",
-     "steps": "array",
-     "reports": "object",
      "testSuiteName": "string",
      "executionLabels": "object",
      "namespace": "string",
@@ -2854,27 +2856,26 @@
      "tags": "object",
      "configParams": "object",
      "runtime": "object",
+     "reports": "array",
      "resourceAggregations": "object",
      "silentMode": "object",
      "runnerTarget": "object",
      "runnerOriginalTarget": "object",
      "assignedAt": "string",
      "signature": "array",
+     "output": "array",
      "resolvedWorkflow": "object",
      "testWorkflowExecutionName": "string",
      "config": "object",
      "target": "object",
      "parentExecutionIds": "array",
-     "count": "integer",
-     "elements": "array",
-     "method": "string",
-     "hasNextPage": "boolean",
      "environment": "string",
      "workflowAnnotations": "object",
      "kind": "string",
      "parent": "string",
      "runAt": "string",
      "health": null,
+     "count": "object",
      "execution": "array",
      "secretUUID": "string",
      "timeout": "integer",
@@ -3325,9 +3326,7 @@
      "labels": "object",
      "location": "object",
      "build_id": "string",
-     "updates": "object",
-     "pagination": "object",
-     "builds": "array"
+     "updates": "object"
     },
     "evidence": [
      "openapi/_original/packer-openapi.yml#DELETE /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}",
@@ -3419,19 +3418,22 @@
      "POST collection"
     ],
     "properties": {
-     "info": "object",
-     "stats": "object",
-     "executions": "array",
-     "failures": "array",
-     "id": "string",
+     "id": "number",
+     "item": "object",
+     "request": "object",
+     "response": "object",
+     "errors": "array",
      "status": "string",
      "source": "string",
      "startedAt": "string",
      "finishedAt": "string",
+     "stats": "object",
      "collectionId": "string",
      "environmentId": "string",
      "createdBy": "string",
-     "duration": "integer"
+     "duration": "integer",
+     "executions": "array",
+     "assertions": "array"
     },
     "evidence": [
      "openapi/_original/postman-api-openapi.yml#POST /monitors/{monitorId}/run",
@@ -3529,9 +3531,14 @@
      "GET collection"
     ],
     "properties": {
-     "driftRuns": "array",
-     "itemsPerPage": "integer",
-     "total": "integer"
+     "created": "string",
+     "deploymentId": "string",
+     "deploymentVersion": "integer",
+     "detectUpdate": "object",
+     "driftDetected": "boolean",
+     "id": "string",
+     "remediateUpdate": "object",
+     "status": "string"
     },
     "evidence": [
      "openapi/_original/pulumi-openapi.json#GET /api/stacks/{orgName}/{projectName}/{stackName}/drift/runs"
@@ -3633,7 +3640,10 @@
      "overrides": "object",
      "variables": "object",
      "emailFailures": "boolean",
-     "tests": "array"
+     "testId": "integer",
+     "status": "string",
+     "started": "integer",
+     "completed": "integer"
     },
     "evidence": [
      "openapi/_original/reflect-openapi.yml#GET /executions/{execution-id}",
@@ -3700,11 +3710,25 @@
      "GET collection"
     ],
     "properties": {
-     "executions": "array",
-     "total": "integer",
-     "page": "integer",
-     "limit": "integer",
-     "totalPages": "integer"
+     "id": "string",
+     "automation_id": "string",
+     "organization_id": "string",
+     "workspace_id": [
+      "string",
+      "null"
+     ],
+     "triggered_at": "string",
+     "trigger_payload": "object",
+     "status": "string",
+     "config": "object",
+     "error": [
+      "string",
+      "null"
+     ],
+     "completed_at": [
+      "string",
+      "null"
+     ]
     },
     "evidence": [
      "openapi/_original/replicas-openapi-original.json#GET /v1/automations/{id}/executions"
@@ -3778,8 +3802,6 @@
      "POST collection"
     ],
     "properties": {
-     "paging": "object",
-     "executions": "array",
      "id": "integer",
      "href": "string",
      "permalink": "string",
@@ -3926,16 +3948,13 @@
      "GET item"
     ],
     "properties": {
-     "count": "integer",
-     "href": "string",
-     "nextHref": "string",
-     "build": "array",
      "id": "integer",
      "buildTypeId": "string",
      "number": "string",
      "status": "string",
      "state": "string",
      "statusText": "string",
+     "href": "string",
      "webUrl": "string",
      "branchName": "string",
      "startDate": "string",
@@ -4031,8 +4050,6 @@
      "mobile": "object",
      "commitSha": "string",
      "prNumber": "integer",
-     "runs": "array",
-     "nextCursor": "string",
      "id": "string",
      "type": "string",
      "status": "string",
@@ -4073,35 +4090,32 @@
      "POST item"
     ],
     "properties": {
-     "totalRecords": "number",
-     "page": "number",
-     "pageSize": "number",
-     "executions": "array",
-     "metaData": "object",
-     "executionId": "string",
-     "startTime": "string",
-     "source": "string",
-     "branch": "string",
      "execution": "string",
-     "concurrency": "number",
+     "executionId": "string",
      "executionResult": "string",
-     "browser": "string",
-     "failedCount": "number",
-     "totalTests": "number",
-     "link": "string",
-     "turboMode": "boolean",
      "duration": "number",
+     "totalTests": "number",
+     "failedCount": "number",
+     "concurrency": "number",
+     "branch": "string",
+     "browser": "array",
+     "startTime": "string",
+     "turboMode": "boolean",
+     "success": "boolean",
+     "resultLabels": "array",
+     "link": "string",
+     "source": "string",
      "failedTests": "object",
      "id": "string",
      "passedCount": "number",
      "abortedCount": "number",
      "timedOutTests": "number",
      "tests": "array",
+     "metaData": "object",
      "baseUrl": "string",
      "grid": "string",
      "parallel": "number",
      "params": null,
-     "resultLabels": "array",
      "retries": "number",
      "testConfig": "string",
      "timeout": "number",
@@ -4393,8 +4407,6 @@
      "GET item"
     ],
     "properties": {
-     "jobs": "array",
-     "total_count": "integer",
      "completed_at": "string",
      "conclusion": "string",
      "created_at": "string",
@@ -4438,8 +4450,6 @@
      "GET item"
     ],
     "properties": {
-     "total_count": "integer",
-     "jobs": "array",
      "id": "integer",
      "run_id": "integer",
      "run_url": "string",
@@ -4880,8 +4890,6 @@
      "GET item"
     ],
     "properties": {
-     "artifacts": "array",
-     "total_count": "integer",
      "archive_download_url": "string",
      "created_at": "string",
      "expired": "boolean",
@@ -4914,8 +4922,6 @@
      "GET item"
     ],
     "properties": {
-     "total_count": "integer",
-     "artifacts": "array",
      "id": "integer",
      "node_id": "string",
      "name": "string",
@@ -5019,14 +5025,38 @@
     ],
     "properties": {
      "status": "string",
-     "artifacts": "array",
-     "itemCount": "integer",
-     "pageCount": "integer",
-     "pageIndex": "integer",
-     "pageSize": "integer",
-     "meta": "object",
-     "id": "string",
+     "artifactType": "string",
+     "deletedAt": "string",
+     "downloadsCount": "integer",
+     "isPublic": "boolean",
+     "isQuarantined": "boolean",
+     "labels": "array",
+     "lastModified": "string",
+     "latestVersion": "string",
      "name": "string",
+     "packageType": "string",
+     "registryIdentifier": "string",
+     "registryPath": "string",
+     "registryUUID": "string",
+     "uuid": "string",
+     "artifactKey": "object",
+     "deploymentMetadata": "object",
+     "digestCount": "integer",
+     "fileCount": "integer",
+     "firewallMode": "string",
+     "lastScannedAt": "string",
+     "metadata": "object",
+     "pullCommand": "string",
+     "purl": "string",
+     "quarantineReason": "string",
+     "registryType": "string",
+     "scanId": "string",
+     "scanStatus": "string",
+     "version": "string",
+     "deletedBy": "object",
+     "package": "string",
+     "size": "string",
+     "id": "string",
      "tag": "string",
      "url": "string",
      "components_count": "integer",
@@ -5041,13 +5071,10 @@
      "build_pipeline_id": "string",
      "build_pipeline_execution_id": "string",
      "baseline": "boolean",
-     "metadata": "object",
      "scorecard": "object",
-     "search_term": "string",
-     "component_filter": "array",
-     "license_filter": "object",
-     "policy_violation": "string",
-     "environment_type": "string",
+     "field_name": "string",
+     "value": "string",
+     "operator": null,
      "type": "string",
      "variant": "object",
      "policy_enforcement": "object",
@@ -5068,6 +5095,7 @@
      "enforcement": "object",
      "slsa": "object",
      "verification": "object",
+     "search_term": "string",
      "artifact_type": "string",
      "compliance_id": "string",
      "title": "string",
@@ -5083,7 +5111,6 @@
      "scan_type": "string",
      "digest": "string",
      "signing": "object",
-     "artifactType": "string",
      "passed": "integer",
      "failed": "integer",
      "scan_types": "array"
@@ -5297,9 +5324,11 @@
      "GET collection"
     ],
     "properties": {
-     "count": "integer",
+     "name": "string",
+     "size": "integer",
+     "modificationTime": "string",
      "href": "string",
-     "file": "array"
+     "content": "object"
     },
     "evidence": [
      "openapi/_original/teamcity-rest-api.yml#GET /builds/{buildLocator}/artifacts"
@@ -5341,7 +5370,9 @@
      "urls": "array",
      "createdAt": "string",
      "projectId": "string",
-     "environmentVariables": "array",
+     "key": "string",
+     "value": "string",
+     "isSecret": "boolean",
      "mcpServerUrl": "string",
      "domains": "array"
     },
@@ -5436,12 +5467,6 @@
      "POST collection"
     ],
     "properties": {
-     "page": "integer",
-     "values": "array",
-     "size": "integer",
-     "pagelen": "integer",
-     "next": "string",
-     "previous": "string",
      "type": "string",
      "uuid": "string",
      "name": "string"
@@ -5906,11 +5931,10 @@
      "variables": "object",
      "versioningKey": "string",
      "clusterName": "string",
-     "environmentValues": "array",
-     "global": "boolean",
-     "isSecret": "boolean",
-     "stackDefault": "string",
-     "variableName": "string"
+     "clusterId": "string",
+     "environmentName": "string",
+     "status": "string",
+     "value": "string"
     },
     "evidence": [
      "openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/environments/{clusterId}",
@@ -6107,9 +6131,8 @@
      "color": "string",
      "harness_version": "string",
      "yaml": "string",
-     "environments": "array",
-     "nextRequest": "object",
-     "last": "boolean"
+     "orgIdentifier": "string",
+     "projectIdentifier": "string"
     },
     "evidence": [
      "openapi/_original/harness-apis-openapi.yaml#DELETE /v1/environments/{environment}",
@@ -6474,9 +6497,7 @@
      "source": "object",
      "op": "string",
      "path": "string",
-     "value": null,
-     "patch": "array",
-     "comment": "string"
+     "value": null
     },
     "evidence": [
      "openapi/_original/launchdarkly-dev-server-openapi.yml#GET /projects/{projectKey}/environments",
@@ -6619,8 +6640,8 @@
      "ApplicationServer": "string",
      "DatabaseProvider": "string",
      "IsCloudEnvironment": "boolean",
-     "EnvironmentKey": "string",
-     "ImportedUsers": "array",
+     "Username": "string",
+     "Email": "string",
      "EnvironmentName": "string",
      "EnvironmentAddress": "string",
      "ServiceCenterUsername": "string",
@@ -6710,13 +6731,13 @@
      "owner": "string",
      "uid": "string",
      "isPublic": "boolean",
-     "environment": "object",
-     "values": "array",
      "enabled": "boolean",
      "key": "string",
      "value": "string",
      "type": "string",
-     "description": "string"
+     "description": "string",
+     "values": "array",
+     "environment": "object"
     },
     "evidence": [
      "openapi/_original/postman-api-openapi.yml#DELETE /environments/{environmentId}",
@@ -6780,10 +6801,18 @@
      "POST item"
     ],
     "properties": {
-     "environments": "array",
-     "nextToken": "string",
+     "created": "string",
+     "deletedAt": "string",
+     "id": "string",
+     "links": "object",
+     "modified": "string",
      "name": "string",
-     "project": "string"
+     "organization": "string",
+     "ownedBy": "object",
+     "project": "string",
+     "referrerMetadata": "object",
+     "settings": "object",
+     "tags": "object"
     },
     "evidence": [
      "openapi/_original/pulumi-openapi.json#GET /api/esc/environments",
@@ -6956,8 +6985,6 @@
      "PUT item"
     ],
     "properties": {
-     "environments": "array",
-     "total": "integer",
      "agent_id": "string",
      "branch_rules": "array",
      "created_at": null,
@@ -7259,7 +7286,9 @@
      "date_finished": "string",
      "conclusion": "string",
      "labels": "object",
-     "include": null,
+     "code": "object",
+     "prs": "array",
+     "releases": "array",
      "date_from": "string",
      "date_to": "string",
      "timezone": "integer",
@@ -7273,10 +7302,13 @@
      "conclusions": "array",
      "with_labels": "object",
      "without_labels": "object",
-     "for": "object",
-     "metrics": "array",
-     "granularity": "string",
+     "date": "string",
      "values": "array",
+     "confidence_mins": "array",
+     "confidence_maxs": "array",
+     "confidence_scores": "array",
+     "for": "array",
+     "metrics": "array",
      "granularities": "array",
      "quantiles": "array"
     },
@@ -7355,12 +7387,6 @@
      "GET item"
     ],
     "properties": {
-     "page": "integer",
-     "values": "array",
-     "size": "integer",
-     "pagelen": "integer",
-     "next": "string",
-     "previous": "string",
      "type": "string",
      "uuid": "string",
      "state": null,
@@ -7383,8 +7409,9 @@
      "id": "string",
      "mcp_server_id": "string",
      "mcp_server_name": "string",
-     "definition": "string",
-     "references": "array"
+     "name": "string",
+     "content": "string",
+     "location": "string"
     },
     "evidence": [
      "openapi/_original/bump-sh-openapi.yml#POST /mcp-servers/{mcp_server_id_or_slug}/deploy"
@@ -7437,8 +7464,7 @@
      "stageName": "string",
      "stageId": "string",
      "artifactId": "string",
-     "createdAt": "string",
-     "artifactReferences": "array"
+     "createdAt": "string"
     },
     "evidence": [
      "openapi/_original/cloudbees-cloudbees-unify-api-current-openapi.yml#GET /v4/components/{componentId}/runs/{runId}/deployments",
@@ -7846,8 +7872,6 @@
      "PUT item"
     ],
     "properties": {
-     "deployments": "array",
-     "nextPageToken": "string",
      "deploymentId": "string",
      "deploymentConfig": "object",
      "updateTime": "string",
@@ -7996,11 +8020,6 @@
      "GET item"
     ],
     "properties": {
-     "deployments": "array",
-     "limit": "integer",
-     "offset": "integer",
-     "count": "integer",
-     "has_next": "boolean",
      "id": "string",
      "created_at": "string",
      "updated_at": "string",
@@ -8020,12 +8039,12 @@
      "messages": "array",
      "provisioning_info": "object",
      "database_info": "object",
-     "skip_build": "boolean",
-     "role": "string",
+     "instance_snapshot_id": "string",
+     "created_by": "string",
      "version": "string",
      "deployment_group": "string",
-     "instance_snapshot_id": "string",
-     "created_by": "string"
+     "skip_build": "boolean",
+     "role": "string"
     },
     "evidence": [
      "openapi/_original/koyeb-openapi.json#GET /v1/deployments",
@@ -8496,9 +8515,20 @@
      "POST collection"
     ],
     "properties": {
-     "deployments": "array",
-     "itemsPerPage": "integer",
-     "total": "integer",
+     "created": "string",
+     "id": "string",
+     "modified": "string",
+     "requestedBy": "object",
+     "status": "string",
+     "version": "integer",
+     "agentPool": "object",
+     "initiator": "string",
+     "jobs": "array",
+     "paused": "boolean",
+     "projectName": "string",
+     "pulumiOperation": "string",
+     "stackName": "string",
+     "updates": "array",
      "agentPoolID": "string",
      "cacheOptions": "object",
      "executorContext": "object",
@@ -8510,16 +8540,7 @@
      "inheritSettings": "boolean",
      "operation": "string",
      "configuration": "object",
-     "created": "string",
-     "id": "string",
-     "initiator": "string",
-     "jobs": "array",
-     "latestVersion": "integer",
-     "modified": "string",
-     "pulumiOperation": "string",
-     "requestedBy": "object",
-     "status": "string",
-     "version": "integer"
+     "latestVersion": "integer"
     },
     "evidence": [
      "openapi/_original/pulumi-openapi.json#GET /api/orgs/{orgName}/deployments",
@@ -8630,9 +8651,7 @@
      "project_id": "integer",
      "start_time": "integer",
      "finish_time": "integer",
-     "user_id": "integer",
-     "deploys": "array",
-     "page": "integer"
+     "user_id": "integer"
     },
     "evidence": [
      "openapi/_original/rollbar-deployment-api-openapi.yml#GET /deploy/{deployId}",
@@ -8672,8 +8691,6 @@
      "POST collection"
     ],
     "properties": {
-     "deployments": "array",
-     "total_count": "integer",
      "id": "string",
      "status": "string",
      "commit_hash": "string",
@@ -11001,7 +11018,6 @@
     "raygun",
     "reflect",
     "render",
-    "replicas",
     "routebase",
     "rundeck",
     "runwhen",

@@ -6,14 +6,26 @@ concepts:
   pipeline:
     path_segment:
     - workflows
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: name
+      id: id
+      status: state
+    core_coverage: 0.667
     evidence:
     - openapi/_original/github-enterprise-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows
   run:
     path_segment:
     - runs
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      status:
+      - status
+      - conclusion
+      id: id
+      created_at: created_at
+      branch: head_branch
+      pipeline_id: workflow_id
+      commit_sha: head_sha
+      name: name
+    core_coverage: 0.75
     evidence:
     - openapi/_original/github-enterprise-openapi.yml#GET /repos/{owner}/{repo}/actions/runs

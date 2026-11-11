@@ -8,8 +8,8 @@
     "status": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.792,
-      "x-commons-providers": 19,
+      "x-commons-share": 0.833,
+      "x-commons-providers": 20,
       "x-commons-spellings": [
         "status",
         "state",
@@ -21,8 +21,8 @@
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.75,
-      "x-commons-providers": 18,
+      "x-commons-share": 0.792,
+      "x-commons-providers": 19,
       "x-commons-spellings": [
         "id",
         "slug"
@@ -31,8 +31,8 @@
     "created_at": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.625,
-      "x-commons-providers": 15,
+      "x-commons-share": 0.667,
+      "x-commons-providers": 16,
       "x-commons-spellings": [
         "created_at",
         "created",
@@ -58,12 +58,39 @@
     "branch": {
       "type": "string",
       "x-commons-tier": "extended",
+      "x-commons-share": 0.458,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "branch",
+        "head_branch",
+        "sourceBranch"
+      ]
+    },
+    "pipeline_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.458,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "pipeline",
+        "workflow_id",
+        "projectID",
+        "pipeline_id",
+        "pipelineId",
+        "buildTypeId"
+      ]
+    },
+    "commit_sha": {
+      "type": "string",
+      "x-commons-tier": "extended",
       "x-commons-share": 0.417,
       "x-commons-providers": 10,
       "x-commons-spellings": [
-        "branch",
-        "sourceBranch",
-        "head_branch"
+        "head_sha",
+        "commit",
+        "sourceVersion",
+        "commitSha",
+        "commit_sha"
       ]
     },
     "finished_at": {
@@ -91,33 +118,6 @@
       "x-commons-spellings": [
         "name",
         "displayName"
-      ]
-    },
-    "pipeline_id": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.417,
-      "x-commons-providers": 10,
-      "x-commons-spellings": [
-        "pipeline",
-        "workflow_id",
-        "projectID",
-        "pipeline_id",
-        "pipelineId",
-        "buildTypeId"
-      ]
-    },
-    "commit_sha": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.375,
-      "x-commons-providers": 9,
-      "x-commons-spellings": [
-        "commit",
-        "head_sha",
-        "sourceVersion",
-        "commitSha",
-        "commit_sha"
       ]
     },
     "number": {

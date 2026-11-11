@@ -13,17 +13,29 @@
       "x-commons-spellings": [
         "id",
         "artifactId",
+        "uuid",
         "artifactID"
       ]
     },
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.5,
-      "x-commons-providers": 6,
+      "x-commons-share": 0.583,
+      "x-commons-providers": 7,
       "x-commons-spellings": [
         "name",
         "title"
+      ]
+    },
+    "size": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "size",
+        "size_in_bytes",
+        "file_size"
       ]
     },
     "created_at": {
@@ -49,17 +61,6 @@
         "download_url"
       ]
     },
-    "size": {
-      "type": "integer",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.333,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "size_in_bytes",
-        "file_size",
-        "size"
-      ]
-    },
     "metadata": {
       "type": "object",
       "x-commons-tier": "extended",
@@ -67,6 +68,7 @@
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "metadata",
+        "labels",
         "tags"
       ]
     },
@@ -87,6 +89,7 @@
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "updated_at",
+        "lastModified",
         "updated",
         "updatedAt"
       ],
