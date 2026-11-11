@@ -1,7 +1,7 @@
 provider: jetbrains
 apis_io: https://apis.io/providers/jetbrains/
 context: ci-cd
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   pipeline:
     path_segment:

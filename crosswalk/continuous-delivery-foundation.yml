@@ -1,7 +1,7 @@
 provider: continuous-delivery-foundation
 apis_io: https://apis.io/providers/continuous-delivery-foundation/
 context: ci-cd
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   pipeline:
     path_segment:

@@ -19,7 +19,7 @@ generated. Every number below is a count of providers.
 | environment | 10 | 7 | name 100%, id 86%, created_at 71%, description 57% | environments 9, envs 1 |
 | deployment | 54 | 48 | id 65%, status 60% | deployments 39, deploy 15, deploys 6, deployment 4 |
 
-Cohort: 241 providers with harvested OpenAPI, 81 crosswalks. Of the providers exposing a pipeline: 58% create, 90% list, 79% fetch, 40% update, 47% delete. Generated 2026-11-10 by build.py.
+Cohort: 241 providers with harvested OpenAPI, 81 crosswalks. Of the providers exposing a pipeline: 58% create, 90% list, 79% fetch, 40% update, 47% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
