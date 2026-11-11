@@ -1,0 +1,15 @@
+provider: new-relic
+apis_io: https://apis.io/providers/new-relic/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/new-relic-openapi.yml#DELETE /applications/{application_id}/deployments/{id}.json
+    - openapi/_original/new-relic-openapi.yml#GET /applications/{application_id}/deployments.json
+    - openapi/_original/new-relic-openapi.yml#POST /applications/{application_id}/deployments.json

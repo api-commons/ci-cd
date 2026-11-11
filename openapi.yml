@@ -1,0 +1,544 @@
+openapi: 3.1.0
+info:
+  title: CI/CD (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common CI/CD interface, distilled from the harvested OpenAPI of 241 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /pipelines:
+    get:
+      operationId: listPipelines
+      summary: List pipelines
+      tags:
+      - Pipelines
+      x-commons-tier: core
+      x-commons-share: 0.895
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Pipeline'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPipeline
+      summary: Create a pipeline
+      tags:
+      - Pipelines
+      x-commons-tier: core
+      x-commons-share: 0.579
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /pipelines/{pipeline_id}:
+    parameters:
+    - $ref: '#/components/parameters/pipeline_id'
+    get:
+      operationId: getPipeline
+      summary: Get a pipeline
+      tags:
+      - Pipelines
+      x-commons-tier: core
+      x-commons-share: 0.789
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deletePipeline
+      summary: Delete a pipeline
+      tags:
+      - Pipelines
+      x-commons-tier: extended
+      x-commons-share: 0.474
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updatePipeline
+      summary: Update a pipeline
+      tags:
+      - Pipelines
+      x-commons-tier: extended
+      x-commons-share: 0.395
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /runs:
+    get:
+      operationId: listRuns
+      summary: List runs
+      tags:
+      - Runs
+      x-commons-tier: core
+      x-commons-share: 0.926
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Run'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createRun
+      summary: Create a run
+      tags:
+      - Runs
+      x-commons-tier: core
+      x-commons-share: 0.704
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /runs/{run_id}:
+    parameters:
+    - $ref: '#/components/parameters/run_id'
+    get:
+      operationId: getRun
+      summary: Get a run
+      tags:
+      - Runs
+      x-commons-tier: core
+      x-commons-share: 0.852
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteRun
+      summary: Delete a run
+      tags:
+      - Runs
+      x-commons-tier: extended
+      x-commons-share: 0.259
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateRun
+      summary: Update a run
+      tags:
+      - Runs
+      x-commons-tier: extended
+      x-commons-share: 0.259
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /runs/{run_id}/jobs:
+    parameters:
+    - $ref: '#/components/parameters/run_id'
+    get:
+      operationId: listJobs
+      summary: List jobs
+      tags:
+      - Jobs
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Job'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /runs/{run_id}/jobs/{job_id}:
+    parameters:
+    - $ref: '#/components/parameters/run_id'
+    - $ref: '#/components/parameters/job_id'
+    get:
+      operationId: getJob
+      summary: Get a job
+      tags:
+      - Jobs
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /artifacts:
+    get:
+      operationId: listArtifacts
+      summary: List artifacts
+      tags:
+      - Artifacts
+      x-commons-tier: core
+      x-commons-share: 0.929
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Artifact'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createArtifact
+      summary: Create an artifact
+      tags:
+      - Artifacts
+      x-commons-tier: extended
+      x-commons-share: 0.286
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /artifacts/{artifact_id}:
+    parameters:
+    - $ref: '#/components/parameters/artifact_id'
+    get:
+      operationId: getArtifact
+      summary: Get an artifact
+      tags:
+      - Artifacts
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    delete:
+      operationId: deleteArtifact
+      summary: Delete an artifact
+      tags:
+      - Artifacts
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+  /environments:
+    get:
+      operationId: listEnvironments
+      summary: List environments
+      tags:
+      - Environments
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id005
+                  $ref: '#/components/schemas/Environment'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createEnvironment
+      summary: Create an environment
+      tags:
+      - Environments
+      x-commons-tier: core
+      x-commons-share: 0.7
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /environments/{environment_id}:
+    parameters:
+    - $ref: '#/components/parameters/environment_id'
+    get:
+      operationId: getEnvironment
+      summary: Get an environment
+      tags:
+      - Environments
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+    delete:
+      operationId: deleteEnvironment
+      summary: Delete an environment
+      tags:
+      - Environments
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+    patch:
+      operationId: updateEnvironment
+      summary: Update an environment
+      tags:
+      - Environments
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /deployments:
+    post:
+      operationId: createDeployment
+      summary: Create a deployment
+      tags:
+      - Deployments
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id006
+                $ref: '#/components/schemas/Deployment'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+    get:
+      operationId: listDeployments
+      summary: List deployments
+      tags:
+      - Deployments
+      x-commons-tier: core
+      x-commons-share: 0.722
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id006
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /deployments/{deployment_id}:
+    parameters:
+    - $ref: '#/components/parameters/deployment_id'
+    get:
+      operationId: getDeployment
+      summary: Get a deployment
+      tags:
+      - Deployments
+      x-commons-tier: core
+      x-commons-share: 0.63
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+    delete:
+      operationId: deleteDeployment
+      summary: Delete a deployment
+      tags:
+      - Deployments
+      x-commons-tier: extended
+      x-commons-share: 0.259
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+    patch:
+      operationId: updateDeployment
+      summary: Update a deployment
+      tags:
+      - Deployments
+      x-commons-tier: extended
+      x-commons-share: 0.204
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+components:
+  schemas:
+    Pipeline:
+      $ref: ./schema/pipeline.json
+    Run:
+      $ref: ./schema/run.json
+    Job:
+      $ref: ./schema/job.json
+    Artifact:
+      $ref: ./schema/artifact.json
+    Environment:
+      $ref: ./schema/environment.json
+    Deployment:
+      $ref: ./schema/deployment.json
+  parameters:
+    pipeline_id:
+      name: pipeline_id
+      in: path
+      required: true
+      schema:
+        type: string
+    run_id:
+      name: run_id
+      in: path
+      required: true
+      schema:
+        type: string
+    job_id:
+      name: job_id
+      in: path
+      required: true
+      schema:
+        type: string
+    artifact_id:
+      name: artifact_id
+      in: path
+      required: true
+      schema:
+        type: string
+    environment_id:
+      name: environment_id
+      in: path
+      required: true
+      schema:
+        type: string
+    deployment_id:
+      name: deployment_id
+      in: path
+      required: true
+      schema:
+        type: string

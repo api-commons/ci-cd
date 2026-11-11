@@ -1,0 +1,66 @@
+provider: continuous-delivery-foundation
+apis_io: https://apis.io/providers/continuous-delivery-foundation/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#DELETE /v4/collections/{id}/pipelines
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#DELETE /v4/pipelines/{id}
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/pipelines
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/pipelines/{id}
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/templates/{name}/{versionOrTag}/usage/pipelines
+  run:
+    path_segment:
+    - builds
+    - executions
+    - runs
+    properties:
+      status: result
+      id: id
+      name: displayName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/continuous-delivery-foundation-jenkins-pipeline-graph-view-openapi.yaml#GET /runs
+    - openapi/_original/continuous-delivery-foundation-jenkins-pipeline-graph-view-openapi_2.yaml#GET /runs
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/builds/{id}
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/events/{id}/builds
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/jobs/{id}/builds
+  job:
+    path_segment:
+    - jobs
+    - steps
+    - stages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/builds/{id}/steps
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/builds/{id}/steps/{name}
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/pipelines/{id}/jobs
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/pipelines/{id}/stages
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#PUT /v4/builds/{id}/steps/{name}
+  artifact:
+    path_segment:
+    - artifacts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/builds/{id}/artifacts
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json#GET /v4/builds/{id}/artifacts/{name*}
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi_2.json#GET /v4/builds/{id}/artifacts
+    - openapi/_original/continuous-delivery-foundation-screwdriver-openapi_2.json#GET /v4/builds/{id}/artifacts/{name*}
+    - openapi/_original/continuous-delivery-foundation-spinnaker-openapi.json#GET /managed/delivery-configs/{name}/artifacts
+  environment:
+    path_segment:
+    - environments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/continuous-delivery-foundation-spinnaker-openapi.json#GET /managed/environments/{application}
+    - openapi/_original/continuous-delivery-foundation-spinnaker-openapi_2.json#GET /managed/environments/{application}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/pipeline.json",
+  "title": "Pipeline",
+  "description": "The common pipeline in CI/CD, distilled from 34 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.853,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.735,
+      "x-commons-providers": 25,
+      "x-commons-spellings": [
+        "id",
+        "slug",
+        "number",
+        "uuid",
+        "build_number"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.618,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "created",
+        "createdDate",
+        "created_on",
+        "creationDate"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.441,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "result"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.324,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "modifiedAt",
+        "modified",
+        "updated"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.294,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "repository": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.206,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "project",
+        "repository"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "ci-cd",
+    "concept": "pipeline",
+    "providers": 34,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

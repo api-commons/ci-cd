@@ -1,0 +1,78 @@
+provider: facets
+apis_io: https://apis.io/providers/facets/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/designer/{stackName}/resourceType/{resourceType}/resourceName/{resourceName}/workflows
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/designer/{stackName}/workflows
+    - openapi/_original/facets-control-plane-openapi.yml#GET /cc-ui/v1/designer/{stackName}/resourceType/{resourceType}/resourceName/{resourceName}/workflows
+    - openapi/_original/facets-control-plane-openapi.yml#GET /cc-ui/v1/designer/{stackName}/workflows
+  run:
+    path_segment:
+    - run
+    - runs
+    properties:
+      status: status
+      started_at: startTime
+      name: name
+      trigger:
+      - reason
+      - triggeredBy
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/actions/{actionName}/runs
+    - openapi/_original/facets-control-plane-openapi.json#POST /cc-ui/v1/actions/run
+    - openapi/_original/facets-control-plane-openapi.yml#GET /cc-ui/v1/actions/{actionName}/runs
+    - openapi/_original/facets-control-plane-openapi.yml#POST /cc-ui/v1/actions/run
+  artifact:
+    path_segment:
+    - artifacts
+    properties:
+      id: artifactId
+      created_at: createdOn
+      metadata: metadata
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/facets-control-plane-openapi.json#DELETE /cc-ui/v1/artifacts/{artifactId}
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/artifacts-ci/{ciName}/artifacts
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/artifacts/{clusterId}
+    - openapi/_original/facets-control-plane-openapi.yml#DELETE /cc-ui/v1/artifacts/{artifactId}
+    - openapi/_original/facets-control-plane-openapi.yml#GET /cc-ui/v1/artifacts-ci/{ciName}/artifacts
+  environment:
+    path_segment:
+    - environments
+    properties:
+      name: name
+      id: id
+      created_at: creationDate
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/environments/{clusterId}
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/stacks/{stackName}/variables/{variableName}/environments
+    - openapi/_original/facets-control-plane-openapi.json#POST /cc-ui/v1/environments
+    - openapi/_original/facets-control-plane-openapi.json#PUT /cc-ui/v1/environments/{clusterId}
+    - openapi/_original/facets-control-plane-openapi.yml#GET /cc-ui/v1/environments/{clusterId}
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      status: status
+      created_at: createdOn
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/clusters/{clusterId}/deployments
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/clusters/{clusterId}/deployments/{deploymentId}
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/clusters/{clusterId}/k8s-explorer/deployments
+    - openapi/_original/facets-control-plane-openapi.json#GET /cc-ui/v1/clusters/{clusterId}/k8s-explorer/deployments/{deploymentName}
+    - openapi/_original/facets-control-plane-openapi.json#POST /cc-ui/v1/clusters/{clusterId}/deployments

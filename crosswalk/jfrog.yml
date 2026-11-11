@@ -1,0 +1,65 @@
+provider: jfrog
+apis_io: https://apis.io/providers/jfrog/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jfrog-pipelines-openapi.yml#GET /v1/pipelines
+    - openapi/_original/jfrog-pipelines-openapi.yml#GET /v1/pipelines/{pipelineId}
+  run:
+    path_segment:
+    - build
+    - runs
+    properties:
+      id: id
+      created_at:
+      - created
+      - createdAt
+      started_at: startedAt
+      finished_at: endedAt
+      pipeline_id: pipelineId
+      number:
+      - runNumber
+      - build_number
+      created_by: created_by
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/jfrog-artifactory-openapi.yml#GET /api/build
+    - openapi/_original/jfrog-artifactory-openapi.yml#GET /api/build/{buildName}
+    - openapi/_original/jfrog-evidence-openapi.yml#GET /v1/evidence/subject/build
+    - openapi/_original/jfrog-pipelines-openapi.yml#GET /v1/runs
+    - openapi/_original/jfrog-pipelines-openapi.yml#GET /v1/runs/{runId}
+  artifact:
+    path_segment:
+    - artifact
+    properties:
+      id: id
+      created_at: created
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/jfrog-evidence-openapi.yml#GET /v1/evidence/subject/artifact
+    - openapi/_original/jfrog-xray-openapi.yml#POST /v1/summary/artifact
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      name: name
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jfrog-ml-openapi.yml#DELETE /v1/deployments/{deploymentId}
+    - openapi/_original/jfrog-ml-openapi.yml#GET /v1/deployments
+    - openapi/_original/jfrog-ml-openapi.yml#GET /v1/deployments/{deploymentId}
+    - openapi/_original/jfrog-ml-openapi.yml#POST /v1/deployments

@@ -1,0 +1,17 @@
+provider: athenian
+apis_io: https://apis.io/providers/athenian/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      status: conclusion
+      environment_id: environment
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/athenian-openapi-original.yml#POST /events/deployments
+    - openapi/_original/athenian-openapi-original.yml#POST /filter/deployments
+    - openapi/_original/athenian-openapi-original.yml#POST /metrics/deployments

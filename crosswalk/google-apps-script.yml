@@ -1,0 +1,18 @@
+provider: google-apps-script
+apis_io: https://apis.io/providers/google-apps-script/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: deploymentId
+      updated_at: updateTime
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /v1/projects/{scriptId}/deployments/{deploymentId}
+    - openapi/_original/openapi.yml#GET /v1/projects/{scriptId}/deployments
+    - openapi/_original/openapi.yml#GET /v1/projects/{scriptId}/deployments/{deploymentId}
+    - openapi/_original/openapi.yml#POST /v1/projects/{scriptId}/deployments
+    - openapi/_original/openapi.yml#PUT /v1/projects/{scriptId}/deployments/{deploymentId}

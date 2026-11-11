@@ -1,0 +1,81 @@
+provider: nuon
+apis_io: https://apis.io/providers/nuon/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      status: status
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/workflows
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/workflows
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/workflows/{workflow_id}
+    - openapi/_original/nuon-oapi-v2-openapi.json#PATCH /v1/workflows/{workflow_id}
+    - openapi/_original/nuon-oapi-v3-openapi.json#GET /v1/installs/{install_id}/workflows
+  run:
+    path_segment:
+    - runs
+    - builds
+    - build
+    properties:
+      status: status
+      id: id
+      created_at: created_at
+      started_at: started_at
+      finished_at:
+      - finished
+      - finished_at
+      - completed_at
+      name: name
+      pipeline_id: workflow_id
+      commit_sha:
+      - commit_sha
+      - head_sha
+      metadata:
+      - metadata
+      - labels
+      updated_at: updated_at
+      created_by: created_by
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/apps/{app_id}/branches/{app_branch_id}/runs
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/apps/{app_id}/components/{component_id}/builds
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/apps/{app_id}/components/{component_id}/builds/{build_id}
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/apps/{app_id}/sandbox/builds
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/apps/{app_id}/sandbox/builds/{build_id}
+  job:
+    path_segment:
+    - steps
+    properties:
+      created_at: created_at
+      id: id
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/action-workflows/runs/{run_id}/steps/{step_id}
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/actions/runs/{run_id}/steps/{step_id}
+    - openapi/_original/nuon-oapi-v3-openapi.json#GET /v1/installs/{install_id}/action-workflows/runs/{run_id}/steps/{step_id}
+    - openapi/_original/nuon-oapi-v3-openapi.json#GET /v1/installs/{install_id}/actions/runs/{run_id}/steps/{step_id}
+  deployment:
+    path_segment:
+    - deploys
+    - deploy
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/components/deploys
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/components/{component_id}/deploys
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/components/{component_id}/deploys/{deploy_id}
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/deploys
+    - openapi/_original/nuon-oapi-v2-openapi.json#GET /v1/installs/{install_id}/deploys/{deploy_id}

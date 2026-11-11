@@ -1,0 +1,125 @@
+provider: harness
+apis_io: https://apis.io/providers/harness/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    - pipeline
+    - workflows
+    properties:
+      name:
+      - name
+      - title
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/harness-apis-openapi.yaml#DELETE /pipeline/api/pipelines/{pipelineIdentifier}
+    - openapi/_original/harness-apis-openapi.yaml#GET /pipeline/api/pipelines/{pipelineIdentifier}
+    - openapi/_original/harness-apis-openapi.yaml#GET /v1/groups/workflows
+    - openapi/_original/harness-apis-openapi.yaml#POST /gateway/chaos/manager/api/rest/recommendations/action/pipeline
+    - openapi/_original/harness-apis-openapi.yaml#POST /iacm/api/modules/{id}/pipeline
+  run:
+    path_segment:
+    - executions
+    - runs
+    - run
+    properties:
+      status:
+      - result
+      - status
+      - phase
+      id: id
+      created_at:
+      - created
+      - createdAt
+      started_at: startedAt
+      branch: branch
+      finished_at:
+      - stoppedAt
+      - completedAt
+      - finishedAt
+      - completed
+      name: name
+      pipeline_id:
+      - pipeline
+      - projectID
+      commit_sha: commitSha
+      trigger:
+      - triggered_by
+      - triggeredBy
+      metadata:
+      - metadata
+      - tags
+      updated_at:
+      - updated
+      - updatedAt
+      created_by: createdBy
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/harness-apis-openapi.yaml#GET /api/infrastructures/executions/{id}
+    - openapi/_original/harness-apis-openapi.yaml#GET /api/infrastructures/{id}/executions
+    - openapi/_original/harness-apis-openapi.yaml#GET /code/api/v1/repos/{repo_identifier}/webhooks/{webhook_identifier}/executions
+    - openapi/_original/harness-apis-openapi.yaml#GET /code/api/v1/repos/{repo_identifier}/webhooks/{webhook_identifier}/executions/{webhook_execution_id}
+    - openapi/_original/harness-apis-openapi.yaml#GET /code/api/v1/webhooks/{webhook_identifier}/executions
+  job:
+    path_segment:
+    - stages
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/harness-apis-openapi.yaml#POST /v1/orgs/{org}/projects/{project}/pipelines/{pipeline}/execute/rerun/{execution-id}/stages
+    - openapi/_original/harness-apis-openapi.yaml#POST /v1/orgs/{org}/projects/{project}/pipelines/{pipeline}/execute/stages
+  artifact:
+    path_segment:
+    - artifacts
+    - artifact
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      metadata:
+      - metadata
+      - tags
+      status: status
+      updated_at:
+      - updated
+      - updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/harness-apis-openapi.yaml#DELETE /har/api/v1/registry/{registry_ref}/artifact/{artifact}
+    - openapi/_original/harness-apis-openapi.yaml#GET /har/api/v1/registry/{registry_ref}/artifacts
+    - openapi/_original/harness-apis-openapi.yaml#GET /har/api/v1/spaces/{space_ref}/artifacts
+    - openapi/_original/harness-apis-openapi.yaml#GET /har/api/v2/artifacts
+    - openapi/_original/harness-apis-openapi.yaml#GET /v1/orgs/{org}/projects/{project}/compliance-results/compliances/{compliance}/artifacts
+  environment:
+    path_segment:
+    - environments
+    properties:
+      name: name
+      created_at: created
+      description: description
+      type: type
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/harness-apis-openapi.yaml#DELETE /v1/environments/{environment}
+    - openapi/_original/harness-apis-openapi.yaml#DELETE /v1/orgs/{org}/environments/{environment}
+    - openapi/_original/harness-apis-openapi.yaml#DELETE /v1/orgs/{org}/projects/{project}/environments/{environment}
+    - openapi/_original/harness-apis-openapi.yaml#GET /cv/api/monitored-service/environments
+    - openapi/_original/harness-apis-openapi.yaml#GET /rmg/api/release/{releaseId}/environments
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      status: status
+      environment_id: environment
+      name: name
+      version: tag
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/harness-apis-openapi.yaml#GET /har/api/v3/versions/{id}/deployments
+    - openapi/_original/harness-apis-openapi.yaml#POST /v1/org/{org}/project/{project}/artifact/{artifact}/tag/{tag}/deployments
+    - openapi/_original/harness-apis-openapi.yaml#POST /v1/orgs/{org}/projects/{project}/artifacts/{artifact}/deployments
+    - openapi/_original/harness-apis-openapi.yaml#POST /v1/orgs/{org}/projects/{project}/remediations/{remediation}/artifacts/{artifact}/deployments

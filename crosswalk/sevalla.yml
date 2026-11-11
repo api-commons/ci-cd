@@ -1,0 +1,28 @@
+provider: sevalla
+apis_io: https://apis.io/providers/sevalla/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sevalla-openapi.yml#GET /pipelines
+    - openapi/_original/sevalla-openapi.yml#POST /pipelines
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sevalla-openapi.yml#GET /applications/{id}/deployments
+    - openapi/_original/sevalla-openapi.yml#GET /applications/{id}/deployments/{deploymentId}
+    - openapi/_original/sevalla-openapi.yml#POST /applications/{id}/deployments
+    - openapi/_original/sevalla-openapi.yml#POST /static-sites/{id}/deployments

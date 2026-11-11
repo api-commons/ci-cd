@@ -1,0 +1,76 @@
+provider: github-actions
+apis_io: https://apis.io/providers/github-actions/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      status: state
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}
+  run:
+    path_segment:
+    - runs
+    properties:
+      status:
+      - status
+      - conclusion
+      id: id
+      created_at: created_at
+      started_at: run_started_at
+      branch: head_branch
+      name: name
+      pipeline_id: workflow_id
+      commit_sha: head_sha
+      number: run_number
+      trigger:
+      - event
+      - actor
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/github-actions-openapi.yml#DELETE /repos/{owner}/{repo}/actions/runs/{run_id}
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/runs
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/runs/{run_id}
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs
+  job:
+    path_segment:
+    - jobs
+    properties:
+      name: name
+      created_at: created_at
+      id: id
+      status:
+      - status
+      - conclusion
+      finished_at: completed_at
+      run_id: run_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/jobs/{job_id}
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs
+  artifact:
+    path_segment:
+    - artifacts
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      download_url: archive_download_url
+      size: size_in_bytes
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/github-actions-openapi.yml#DELETE /repos/{owner}/{repo}/actions/artifacts/{artifact_id}
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/artifacts
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/artifacts/{artifact_id}
+    - openapi/_original/github-actions-openapi.yml#GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts

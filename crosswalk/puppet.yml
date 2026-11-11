@@ -1,0 +1,13 @@
+provider: puppet
+apis_io: https://apis.io/providers/puppet/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deploy
+    properties:
+      environment_id: environment
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/puppet-openapi.yml#POST /command/deploy

@@ -1,0 +1,18 @@
+provider: upsun
+apis_io: https://apis.io/providers/upsun/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    - deploy
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/platform.sh-developer-portal-openapi-original.json#DELETE /projects/{projectId}/deployments/{deploymentTargetConfigurationId}
+    - openapi/_original/platform.sh-developer-portal-openapi-original.json#GET /projects/{projectId}/deployments
+    - openapi/_original/platform.sh-developer-portal-openapi-original.json#GET /projects/{projectId}/deployments/{deploymentTargetConfigurationId}
+    - openapi/_original/platform.sh-developer-portal-openapi-original.json#GET /projects/{projectId}/environments/{environmentId}/deployments
+    - openapi/_original/platform.sh-developer-portal-openapi-original.json#GET /projects/{projectId}/environments/{environmentId}/deployments/{deploymentId}

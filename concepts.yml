@@ -1,0 +1,94 @@
+context: ci-cd
+name: CI/CD
+intro: >-
+  The common CI/CD vocabulary -- the pipelines that define a build, the runs that execute
+  them, the jobs inside a run, the artifacts they produce, the environments they deploy to
+  and the deployments themselves -- distilled from the APIs that already exist.
+tags: [CI/CD, Continuous Integration, Continuous Delivery, Continuous Deployment, Deployment, Build Automation, DevOps]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, next_page_token, items]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, number, build_number, slug]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, queued_at]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, labels, tags]
+  status: [state, result, conclusion, outcome, phase, lifecycle]
+  name: [title, display_name, label]
+  description: [notes, note, details, message]
+  started_at: [start_time, started, run_started_at, start]
+  finished_at: [completed_at, finished, end_time, ended_at, stopped_at, stop_time, completed]
+  commit_sha: [sha, commit, revision, head_sha, commit_id, vcs_revision, source_version]
+  branch: [ref, head_branch, source_branch, git_branch, vcs_branch]
+  pipeline_id: [pipeline, workflow_id, definition_id, project_id, build_type_id, job_name]
+
+concepts:
+  pipeline:
+    # Singular /workflow is a business-automation workflow far more often than CI.
+    segments: [pipelines, pipeline, workflows, build_definitions, definitions@build, build_types, buildtypes, build_configs, projects@ci]
+    aliases:
+      repository: [repo, repository_url, vcs_url, repository_id, project]
+      trigger: [triggers, "on", schedule, trigger_type]
+      path: [config_path, file, yaml_path, definition_path]
+  run:
+    requires: [pipeline]
+    segments: [runs, run, builds, build, workflow_runs, pipeline_runs, executions, executions@pipelines]
+    aliases:
+      number: [run_number, build_number, iteration]
+      trigger: [triggered_by, event, cause, reason, actor]
+      duration: [duration_ms, duration_seconds, elapsed, time_taken]
+  job:
+    requires: [pipeline]
+    path: /runs/{run_id}/jobs
+    segments: ["jobs@runs|run|builds|build|pipelines|workflows|actions", stages@runs|builds|pipelines, steps@jobs|runs|builds, tasks@builds|pipelines]
+    aliases:
+      runner: [runner_name, agent, executor, machine, runner_id]
+      log_url: [logs_url, log, web_url, html_url]
+  artifact:
+    requires: [pipeline]
+    segments: [artifacts, artifact, build_artifacts]
+    aliases:
+      size: [size_in_bytes, file_size, bytes]
+      download_url: [archive_download_url, url, path, location]
+      expires_at: [expiry, expire_at, expires]
+  environment:
+    requires: [pipeline]
+    segments: [environments, environment, envs, deploy_targets, targets@deploy|deployments]
+    aliases:
+      url: [external_url, environment_url, deployment_url]
+      type: [tier, environment_type, kind, stage]
+  deployment:
+    segments: [deployments, deployment, deploys, deploy, releases@deploy|deployments]
+    aliases:
+      environment_id: [environment, env, target, environment_name]
+      deployed_at: [deployed, finished_at, completed_at, created]
+      version: [release, version_label, tag, image]
+      creator_id: [creator, user, deployed_by, actor, triggered_by]
+
+exclude:
+  run:
+    browserstack: /automate/builds group test sessions
+  deployment:
+    bump-sh: /mcp-servers/{id}/deploy publishes an MCP server definition
+duplicates:
+  azure-devops: [microsoft-azure-devops]
+  upsun: [platform.sh]
+
+findings:
+  - "The hierarchy is shared: a pipeline (name, id) runs as a run (status, id, start time),
+    which is made of jobs (name, status). GitHub Actions' workflows and runs, GitLab's
+    pipelines and jobs, Buildkite's builds and Azure's definitions all fit it."
+  - "A deployment agrees only on id and status: hosting platforms, CD tools and release
+    trackers each record a deploy differently, and its environment is referenced by under a
+    third."
+  - "An environment agrees on name, id, description and created_at wherever it is a resource."
+decisions:
+  - "A pipeline covers workflows, build definitions and build types; a run covers builds,
+    workflow runs and executions. The two levels are kept apart because every provider
+    keeps them apart."
+  - "Singular `/workflow` is not a pipeline (business automation); plural `workflows` is."
+  - "`POST /deploy` on a hosting platform creates a deployment and counts as one."
+  - "Test-session builds (BrowserStack) are not CI runs."
+  - "Duplicates merged: Azure DevOps, Platform.sh into Upsun."

@@ -1,0 +1,13 @@
+provider: mabl
+apis_io: https://apis.io/providers/mabl/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployment
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mabl-openapi.yml#GET /events/deployment
+    - openapi/_original/mabl-openapi.yml#POST /events/deployment

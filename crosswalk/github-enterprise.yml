@@ -1,0 +1,19 @@
+provider: github-enterprise
+apis_io: https://apis.io/providers/github-enterprise/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/github-enterprise-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows
+  run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/github-enterprise-openapi.yml#GET /repos/{owner}/{repo}/actions/runs

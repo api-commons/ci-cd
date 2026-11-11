@@ -1,0 +1,33 @@
+provider: spinnaker
+apis_io: https://apis.io/providers/spinnaker/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      id: id
+      status: status
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/spinnaker-gate-openapi.yml#DELETE /pipelines/{id}
+    - openapi/_original/spinnaker-gate-openapi.yml#GET /applications/{application}/pipelines
+    - openapi/_original/spinnaker-gate-openapi.yml#GET /pipelines/{id}
+    - openapi/_original/spinnaker-gate-openapi.yml#POST /pipelines
+  run:
+    path_segment:
+    - builds
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/spinnaker-gate-openapi.yml#GET /v2/builds
+  job:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/spinnaker-gate-openapi.yml#GET /v2/builds/{buildMaster}/jobs

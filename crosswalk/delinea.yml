@@ -1,0 +1,25 @@
+provider: delinea
+apis_io: https://apis.io/providers/delinea/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipeline
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/delinea-secret-server-openapi.json#DELETE /v1/event-pipeline-policy/{policyId}/pipeline/{pipelineId}
+  run:
+    path_segment:
+    - run
+    - runs
+    properties:
+      status: status
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v1/event-pipeline-policy/runs
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v1/event-pipeline/runs
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v1/secret-dependencies/run/{identifier}
+    - openapi/_original/delinea-secret-server-openapi.json#POST /v1/discovery/run
+    - openapi/_original/delinea-secret-server-openapi.json#POST /v1/secret-dependencies/run

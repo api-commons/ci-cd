@@ -1,0 +1,60 @@
+aid: common-ci-cd
+name: CI/CD
+type: Common
+description: 'The common CI/CD vocabulary, distilled from the harvested OpenAPI of 241 providers in APIs.io: shared
+  operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each provider''s
+  own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- CI/CD
+- Continuous Integration
+- Continuous Delivery
+- Continuous Deployment
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/ci-cd/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-ci-cd:ci-cd
+  name: Common CI/CD Interface
+  description: The CI/CD interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/ci-cd
+  tags:
+  - CI/CD
+  - Continuous Integration
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: pipeline
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/pipeline.json
+  - type: JSONSchema
+    name: run
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/run.json
+  - type: JSONSchema
+    name: job
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/job.json
+  - type: JSONSchema
+    name: artifact
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/artifact.json
+  - type: JSONSchema
+    name: environment
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/environment.json
+  - type: JSONSchema
+    name: deployment
+    url: https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/deployment.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/ci-cd/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

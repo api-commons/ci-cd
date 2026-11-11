@@ -1,0 +1,58 @@
+provider: microsoft-azure-pipelines
+apis_io: https://apis.io/providers/microsoft-azure-pipelines/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    - definitions
+    properties:
+      name: name
+      id: id
+      created_at: createdDate
+      repository: project
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/definitions
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/definitions/{definitionId}
+    - openapi/_original/azure-pipelines-rest-api-openapi.yml#GET /pipelines
+    - openapi/_original/azure-pipelines-rest-api-openapi.yml#GET /pipelines/{pipelineId}
+    - openapi/_original/azure-pipelines-rest-api-openapi.yml#POST /pipelines
+  run:
+    path_segment:
+    - builds
+    - runs
+    properties:
+      status:
+      - status
+      - result
+      - state
+      id: id
+      created_at: createdDate
+      started_at: startTime
+      branch: sourceBranch
+      name: name
+      pipeline_id: pipeline
+      commit_sha: sourceVersion
+      number: buildNumber
+      trigger: reason
+      metadata: tags
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#DELETE /build/builds/{buildId}
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/builds
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/builds/{buildId}
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#PATCH /build/builds/{buildId}
+    - openapi/_original/azure-pipelines-rest-api-openapi.yml#GET /pipelines/{pipelineId}/runs
+  artifact:
+    path_segment:
+    - artifacts
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/builds/{buildId}/artifacts
+    - openapi/_original/azure-pipelines-build-api-openapi.yml#GET /build/builds/{buildId}/artifacts/{artifactName}
+    - openapi/_original/azure-pipelines-rest-api-openapi.yml#GET /pipelines/{pipelineId}/runs/{runId}/artifacts

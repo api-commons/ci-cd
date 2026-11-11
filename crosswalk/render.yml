@@ -1,0 +1,62 @@
+provider: render
+apis_io: https://apis.io/providers/render/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      id:
+      - id
+      - slug
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/render-openapi.json#DELETE /workflows/{workflowId}
+    - openapi/_original/render-openapi.json#GET /workflows
+    - openapi/_original/render-openapi.json#GET /workflows/{workflowId}
+    - openapi/_original/render-openapi.json#PATCH /workflows/{workflowId}
+    - openapi/_original/render-openapi.json#POST /workflows
+  run:
+    path_segment:
+    - runs
+    properties:
+      status: status
+      id: id
+      started_at: startedAt
+      finished_at: finishedAt
+      trigger: triggeredBy
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/render-openapi.json#DELETE /cron-jobs/{cronJobId}/runs
+    - openapi/_original/render-openapi.json#POST /cron-jobs/{cronJobId}/runs
+  environment:
+    path_segment:
+    - environments
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/render-openapi.json#DELETE /environments/{environmentId}
+    - openapi/_original/render-openapi.json#GET /environments
+    - openapi/_original/render-openapi.json#GET /environments/{environmentId}
+    - openapi/_original/render-openapi.json#PATCH /environments/{environmentId}
+    - openapi/_original/render-openapi.json#POST /environments
+  deployment:
+    path_segment:
+    - deploys
+    properties:
+      id: id
+      status: status
+      created_at: createdAt
+      updated_at: updatedAt
+      version: image
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/render-openapi.json#GET /services/{serviceId}/deploys
+    - openapi/_original/render-openapi.json#GET /services/{serviceId}/deploys/{deployId}
+    - openapi/_original/render-openapi.json#POST /services/{serviceId}/deploys

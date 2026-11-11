@@ -1,0 +1,48 @@
+provider: codefresh
+apis_io: https://apis.io/providers/codefresh/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    - pipeline
+    properties:
+      name: name
+      description: description
+      repository: project
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/codefresh-openapi.json#DELETE /pipelines/{name}
+    - openapi/_original/codefresh-openapi.json#GET /hermes/triggers/pipeline/{pipeline}
+    - openapi/_original/codefresh-openapi.json#GET /pipelines
+    - openapi/_original/codefresh-openapi.json#GET /pipelines/{name}
+    - openapi/_original/codefresh-openapi.json#POST /pipelines
+  run:
+    path_segment:
+    - run
+    - builds
+    properties:
+      branch: branch
+      trigger: trigger
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/codefresh-openapi.json#GET /builds/{buildId}
+    - openapi/_original/codefresh-openapi.json#POST /compositions/{identifier}/run
+    - openapi/_original/codefresh-openapi.json#POST /pipelines/run
+    - openapi/_original/codefresh-openapi.json#POST /pipelines/run/{name}
+  environment:
+    path_segment:
+    - environments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/codefresh-openapi.json#GET /environments
+    - openapi/_original/codefresh-openapi.json#GET /environments/{id}
+  deployment:
+    path_segment:
+    - deployments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/codefresh-openapi.json#GET /kubernetes/deployments/{name}

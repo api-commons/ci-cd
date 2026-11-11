@@ -1,0 +1,15 @@
+provider: assertible
+apis_io: https://apis.io/providers/assertible/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      environment_id: environment
+      version: version
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/assertible-openapi.yml#POST /deployments

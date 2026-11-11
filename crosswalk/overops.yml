@@ -1,0 +1,12 @@
+provider: overops
+apis_io: https://apis.io/providers/overops/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/overops-openapi-original.json#GET /services/{env_id}/deployments

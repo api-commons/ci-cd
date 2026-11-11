@@ -1,0 +1,39 @@
+provider: teamcity
+apis_io: https://apis.io/providers/teamcity/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - buildtypes
+    properties:
+      name: name
+      id: id
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/teamcity-rest-api.yml#GET /buildTypes
+    - openapi/_original/teamcity-rest-api.yml#GET /buildTypes/{btLocator}
+  run:
+    path_segment:
+    - builds
+    properties:
+      status:
+      - status
+      - state
+      id: id
+      pipeline_id: buildTypeId
+      number: number
+      metadata: properties
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/teamcity-rest-api.yml#GET /buildTypes/{btLocator}/builds
+    - openapi/_original/teamcity-rest-api.yml#GET /builds
+    - openapi/_original/teamcity-rest-api.yml#GET /builds/{buildLocator}
+  artifact:
+    path_segment:
+    - artifacts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/teamcity-rest-api.yml#GET /builds/{buildLocator}/artifacts

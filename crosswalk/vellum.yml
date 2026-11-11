@@ -1,0 +1,22 @@
+provider: vellum
+apis_io: https://apis.io/providers/vellum/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deploy
+    - deployments
+    properties:
+      id: id
+      status: status
+      environment_id: environment
+      name:
+      - label
+      - name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vellum-openapi.json#GET /v1/deployments
+    - openapi/_original/vellum-openapi.json#GET /v1/deployments/{id}
+    - openapi/_original/vellum-openapi.json#POST /v1/sandboxes/{id}/prompts/{prompt_variant_id}/deploy
+    - openapi/_original/vellum-openapi.json#POST /v1/workflow-sandboxes/{id}/deploy

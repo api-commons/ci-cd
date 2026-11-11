@@ -1,0 +1,22 @@
+provider: gitlab-ci
+apis_io: https://apis.io/providers/gitlab-ci/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      environment_id: environment
+      updated_at: updated_at
+      version: tag
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gitlab-ci-openapi.yml#DELETE /api/v4/projects/{id}/deployments/{deployment_id}
+    - openapi/_original/gitlab-ci-openapi.yml#GET /api/v4/projects/{id}/deployments
+    - openapi/_original/gitlab-ci-openapi.yml#GET /api/v4/projects/{id}/deployments/{deployment_id}
+    - openapi/_original/gitlab-ci-openapi.yml#POST /api/v4/projects/{id}/deployments
+    - openapi/_original/gitlab-ci-openapi.yml#PUT /api/v4/projects/{id}/deployments/{deployment_id}

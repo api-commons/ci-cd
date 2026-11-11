@@ -1,0 +1,918 @@
+context: ci-cd
+name: CI/CD
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - CI/CD
+  - Continuous Integration
+  - Continuous Delivery
+  - Continuous Deployment
+  - Deployment
+  - Build Automation
+  - DevOps
+  providers_with_harvested_openapi: 241
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  run:
+    browserstack: /automate/builds group test sessions
+  deployment:
+    bump-sh: /mcp-servers/{id}/deploy publishes an MCP server definition
+duplicates:
+  azure-devops:
+  - microsoft-azure-devops
+  upsun:
+  - platform.sh
+shared_specs: {}
+concepts:
+  pipeline:
+    segments_seen:
+      pipelines: 20
+      workflows: 16
+      pipeline: 5
+      definitions: 2
+      buildtypes: 2
+    providers_exposing: 38
+    providers_with_readable_schema: 34
+    operations:
+    - operation: GET collection
+      providers: 34
+      share: 0.895
+      tier: core
+    - operation: GET item
+      providers: 30
+      share: 0.789
+      tier: core
+    - operation: POST collection
+      providers: 22
+      share: 0.579
+      tier: core
+    - operation: DELETE item
+      providers: 18
+      share: 0.474
+      tier: extended
+    - operation: UPDATE item
+      providers: 15
+      share: 0.395
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.079
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.026
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.026
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 29
+      share: 0.853
+      type: string
+      spellings:
+      - name
+      - title
+    - name: id
+      tier: core
+      providers: 25
+      share: 0.735
+      type: string
+      spellings:
+      - id
+      - slug
+      - number
+      - uuid
+      - build_number
+    - name: created_at
+      tier: core
+      providers: 21
+      share: 0.618
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+      - createdDate
+      - created_on
+      - creationDate
+    - name: status
+      tier: extended
+      providers: 15
+      share: 0.441
+      type: string
+      spellings:
+      - status
+      - state
+      - result
+    - name: updated_at
+      tier: extended
+      providers: 11
+      share: 0.324
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - modifiedAt
+      - modified
+      - updated
+    - name: description
+      tier: extended
+      providers: 10
+      share: 0.294
+      type: string
+      spellings:
+      - description
+    - name: repository
+      tier: extended
+      providers: 7
+      share: 0.206
+      type: object
+      spellings:
+      - project
+      - repository
+    long_tail_count: 222
+    long_tail_sample:
+    - metadata
+    - pipeline_id
+    - trigger
+    - type
+    - finished_at
+    - started_at
+    - steps
+    - commit_sha
+    - configuration
+    - path
+    - badge_url
+    - kind
+    - parameters
+    - spec
+    - variables
+    - version
+    - web_url
+    - archived_at
+    - branch
+    - cluster_id
+    - created_by
+    - default_branch
+    - definition
+    - event
+    - folder
+    - html_url
+    - metrics
+    - org_id
+    - owner
+    - owner_id
+    - queue_status
+    - stages
+    - timeout_seconds
+    - uri
+    - aasm_state
+    - account_id
+    - admins
+    - api_version
+    - app_branch_runs
+    - app_id
+  run:
+    segments_seen:
+      runs: 16
+      builds: 14
+      executions: 6
+      run: 5
+      build: 3
+    providers_exposing: 27
+    providers_with_readable_schema: 24
+    operations:
+    - operation: GET collection
+      providers: 25
+      share: 0.926
+      tier: core
+    - operation: GET item
+      providers: 23
+      share: 0.852
+      tier: core
+    - operation: POST collection
+      providers: 19
+      share: 0.704
+      tier: core
+    - operation: DELETE item
+      providers: 7
+      share: 0.259
+      tier: extended
+    - operation: UPDATE item
+      providers: 7
+      share: 0.259
+      tier: extended
+    - operation: DELETE collection
+      providers: 1
+      share: 0.037
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.037
+      tier: long-tail
+    properties:
+    - name: status
+      tier: core
+      providers: 19
+      share: 0.792
+      type: string
+      spellings:
+      - status
+      - state
+      - result
+      - conclusion
+      - phase
+    - name: id
+      tier: core
+      providers: 18
+      share: 0.75
+      type: string
+      spellings:
+      - id
+      - slug
+    - name: created_at
+      tier: core
+      providers: 15
+      share: 0.625
+      type: string
+      spellings:
+      - created_at
+      - created
+      - createdDate
+      - createdAt
+      - created_on
+    - name: started_at
+      tier: core
+      providers: 14
+      share: 0.583
+      type: string
+      spellings:
+      - started_at
+      - startTime
+      - startedAt
+      - run_started_at
+    - name: branch
+      tier: extended
+      providers: 10
+      share: 0.417
+      type: string
+      spellings:
+      - branch
+      - sourceBranch
+      - head_branch
+    - name: finished_at
+      tier: extended
+      providers: 10
+      share: 0.417
+      type: string
+      spellings:
+      - completed_at
+      - finished_at
+      - finishedAt
+      - stoppedAt
+      - completedAt
+      - completed
+      - endedAt
+      - endTime
+    - name: name
+      tier: extended
+      providers: 10
+      share: 0.417
+      type: string
+      spellings:
+      - name
+      - displayName
+    - name: pipeline_id
+      tier: extended
+      providers: 10
+      share: 0.417
+      type: string
+      spellings:
+      - pipeline
+      - workflow_id
+      - projectID
+      - pipeline_id
+      - pipelineId
+      - buildTypeId
+    - name: commit_sha
+      tier: extended
+      providers: 9
+      share: 0.375
+      type: string
+      spellings:
+      - commit
+      - head_sha
+      - sourceVersion
+      - commitSha
+      - commit_sha
+    - name: number
+      tier: extended
+      providers: 9
+      share: 0.375
+      type: integer
+      spellings:
+      - number
+      - buildNumber
+      - run_number
+      - runNumber
+      - build_number
+    - name: trigger
+      tier: extended
+      providers: 9
+      share: 0.375
+      type: string
+      spellings:
+      - reason
+      - triggeredBy
+      - trigger
+      - actor
+      - event
+      - triggered_by
+    - name: metadata
+      tier: extended
+      providers: 7
+      share: 0.292
+      type: object
+      spellings:
+      - tags
+      - metadata
+      - labels
+      - meta_data
+      - properties
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.25
+      type: string
+      spellings:
+      - updated_at
+      - updated
+      - updatedAt
+      - modified
+    - name: created_by
+      tier: extended
+      providers: 5
+      share: 0.208
+      type: string
+      spellings:
+      - created_by
+      - createdBy
+    long_tail_count: 494
+    long_tail_sample:
+    - duration
+    - repository
+    - variables
+    - command
+    - error_message
+    - project
+    - scheduled_at
+    - steps
+    - trigger_type
+    - web_url
+    - actions
+    - app_id
+    - branch_name
+    - build_id
+    - build_number_revision
+    - build_type
+    - config
+    - content
+    - creator
+    - definition
+    - description
+    - display_title
+    - env_vars
+    - finish_time
+    - finished_date
+    - head_repository
+    - html_url
+    - image
+    - inputs
+    - jobs
+    - logs
+    - org_id
+    - outputs
+    - page_count
+    - parameters
+    - path
+    - priority
+    - queue_time
+    - requested_by
+    - requested_for
+  job:
+    segments_seen:
+      jobs: 6
+      stages: 3
+      steps: 2
+    providers_exposing: 9
+    providers_with_readable_schema: 7
+    operations:
+    - operation: GET collection
+      providers: 7
+      share: 0.778
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: POST collection
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - name
+    - name: created_at
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - created_at
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.571
+      type: integer
+      spellings:
+      - id
+    - name: status
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - status
+      - conclusion
+    - name: finished_at
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - completed_at
+    - name: run_id
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: integer
+      spellings:
+      - run_id
+    long_tail_count: 41
+    long_tail_sample:
+    - commit_sha
+    - jobs
+    - log_url
+    - metadata
+    - run_attempt
+    - run_url
+    - runner
+    - started_at
+    - steps
+    - timeout_seconds
+    - updated_at
+    - adhoc_config
+    - app_id
+    - branch
+    - cancellation_requested_at
+    - code
+    - content
+    - created_by_id
+    - description
+    - etag
+    - execution_details
+    - execution_duration
+    - expression_values
+    - index
+    - inputs_yaml
+    - install_action_workflow_run_id
+    - metrics
+    - node_id
+    - org_id
+    - pipeline_id
+    - pipeline_version
+    - related_entities
+    - runner_group_id
+    - runner_group_name
+    - stage_identifiers
+    - status_message
+    - status_v2
+    - step_id
+    - uses
+    - waiting_for
+  artifact:
+    segments_seen:
+      artifacts: 13
+      artifact: 2
+    providers_exposing: 14
+    providers_with_readable_schema: 12
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 0.929
+      tier: core
+    - operation: GET item
+      providers: 7
+      share: 0.5
+      tier: core
+    - operation: DELETE item
+      providers: 6
+      share: 0.429
+      tier: extended
+    - operation: POST collection
+      providers: 4
+      share: 0.286
+      tier: extended
+    properties:
+    - name: id
+      tier: core
+      providers: 10
+      share: 0.833
+      type: string
+      spellings:
+      - id
+      - artifactId
+      - artifactID
+    - name: name
+      tier: core
+      providers: 6
+      share: 0.5
+      type: string
+      spellings:
+      - name
+      - title
+    - name: created_at
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - created_at
+      - createdOn
+      - created
+    - name: download_url
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - path
+      - archive_download_url
+      - download_url
+    - name: size
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: integer
+      spellings:
+      - size_in_bytes
+      - file_size
+      - size
+    - name: metadata
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: object
+      spellings:
+      - metadata
+      - tags
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - status
+      - state
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - updated_at
+      - updated
+      - updatedAt
+    long_tail_count: 104
+    long_tail_sample:
+    - artifact_type
+    - created_by
+    - expired
+    - expires_at
+    - resource
+    - signed_content
+    - tag
+    - workflow_run
+    - activity
+    - allow_list_violation_count
+    - applied_rule_id
+    - applied_rule_name
+    - applied_rule_version_id
+    - artifact_name
+    - artifact_uri
+    - artifactory
+    - baseline
+    - build_description
+    - build_pipeline_execution_id
+    - build_pipeline_id
+    - classified
+    - compliance_id
+    - component_filter
+    - components_count
+    - deny_list_violation_count
+    - deployment
+    - deployment_status
+    - deployments
+    - description
+    - digest
+    - dirname
+    - dsse_envelope_path
+    - enforcement
+    - enforcement_id
+    - environment_type
+    - execution_name
+    - executions
+    - external_id
+    - failed
+    - file
+  environment:
+    segments_seen:
+      environments: 9
+      envs: 1
+    providers_exposing: 10
+    providers_with_readable_schema: 7
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 0.9
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.8
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.7
+      tier: core
+    - operation: DELETE item
+      providers: 6
+      share: 0.6
+      tier: core
+    - operation: UPDATE item
+      providers: 6
+      share: 0.6
+      tier: core
+    - operation: DELETE collection
+      providers: 1
+      share: 0.1
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 7
+      share: 1.0
+      type: string
+      spellings:
+      - name
+      - display_name
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.857
+      type: string
+      spellings:
+      - id
+      - uuid
+      - slug
+    - name: created_at
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - created_at
+      - creationDate
+      - created
+      - createdAt
+    - name: description
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - description
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - type
+    long_tail_count: 103
+    long_tail_sample:
+    - color
+    - created_by
+    - deleted
+    - metadata
+    - status
+    - updated_at
+    - agent_token
+    - allowed_methods
+    - auto_sign_off_schedule
+    - base_cluster_id
+    - base_cluster_name
+    - branch
+    - cd_pipeline_parent
+    - change_log
+    - cloud
+    - cloud_account_id
+    - cloud_account_secret_id
+    - cloud_storage
+    - cluster_code
+    - cluster_name
+    - cluster_state
+    - common_environment_variables
+    - component_versions
+    - configure_context_command
+    - configured
+    - connect_command
+    - connected
+    - databases_ids
+    - disconnect_command
+    - egress_server_id
+    - enable_auto_sign_off
+    - enabled
+    - env_group_ids
+    - environment_name
+    - environment_queue_limit
+    - environment_values
+    - features
+    - from_deploy
+    - from_deploy_id
+    - global
+  deployment:
+    segments_seen:
+      deployments: 39
+      deploy: 15
+      deploys: 6
+      deployment: 4
+    providers_exposing: 54
+    providers_with_readable_schema: 48
+    operations:
+    - operation: POST collection
+      providers: 42
+      share: 0.778
+      tier: core
+    - operation: GET collection
+      providers: 39
+      share: 0.722
+      tier: core
+    - operation: GET item
+      providers: 34
+      share: 0.63
+      tier: core
+    - operation: DELETE item
+      providers: 14
+      share: 0.259
+      tier: extended
+    - operation: UPDATE item
+      providers: 11
+      share: 0.204
+      tier: extended
+    - operation: POST item
+      providers: 2
+      share: 0.037
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 31
+      share: 0.646
+      type: string
+      spellings:
+      - id
+      - deploymentId
+      - uuid
+      - ID
+    - name: status
+      tier: core
+      providers: 29
+      share: 0.604
+      type: string
+      spellings:
+      - status
+      - state
+      - conclusion
+      - Status
+    - name: created_at
+      tier: extended
+      providers: 20
+      share: 0.417
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - createTime
+      - createdOn
+      - CreatedOn
+    - name: environment_id
+      tier: extended
+      providers: 14
+      share: 0.292
+      type: string
+      spellings:
+      - environment
+      - environmentId
+      - environmentName
+    - name: name
+      tier: extended
+      providers: 13
+      share: 0.271
+      type: string
+      spellings:
+      - name
+      - label
+      - title
+    - name: updated_at
+      tier: extended
+      providers: 12
+      share: 0.25
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - updateTime
+      - modified
+    - name: version
+      tier: extended
+      providers: 11
+      share: 0.229
+      type: string
+      spellings:
+      - version
+      - tag
+      - release
+      - image
+    long_tail_count: 519
+    long_tail_sample:
+    - branch
+    - description
+    - metadata
+    - pipeline_id
+    - commit_sha
+    - started_at
+    - type
+    - creator_id
+    - deployed_at
+    - created_by
+    - app_id
+    - build_id
+    - comment
+    - release_id
+    - application_name
+    - artifact_id
+    - clear_cache
+    - commit_message
+    - commit_url
+    - component_id
+    - deleted_at
+    - deployment_key
+    - digest
+    - env_id
+    - identifier
+    - image_url
+    - key
+    - location
+    - org_id
+    - published_at
+    - replicas
+    - repo_url
+    - requested_by
+    - resource_type
+    - resources
+    - role
+    - services
+    - settings
+    - size
+    - started_on

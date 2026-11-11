@@ -1,0 +1,12 @@
+provider: terminal-use
+apis_io: https://apis.io/providers/terminal-use/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deploy
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/terminal-use-openapi-original.json#POST /agents/deploy

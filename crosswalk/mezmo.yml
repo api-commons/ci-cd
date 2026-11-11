@@ -1,0 +1,22 @@
+provider: mezmo
+apis_io: https://apis.io/providers/mezmo/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: title
+      id: id
+      created_at: createdAt
+      status: status
+      updated_at: updatedAt
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mezmo-pipeline-api-openapi.yml#DELETE /pipelines/{pipelineId}
+    - openapi/_original/mezmo-pipeline-api-openapi.yml#GET /pipelines
+    - openapi/_original/mezmo-pipeline-api-openapi.yml#GET /pipelines/{pipelineId}
+    - openapi/_original/mezmo-pipeline-api-openapi.yml#POST /pipelines
+    - openapi/_original/mezmo-pipeline-api-openapi.yml#PUT /pipelines/{pipelineId}

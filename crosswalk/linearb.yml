@@ -1,0 +1,13 @@
+provider: linearb
+apis_io: https://apis.io/providers/linearb/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/linearb-openapi.yml#GET /api/v1/deployments
+    - openapi/_original/linearb-openapi.yml#POST /api/v1/deployments

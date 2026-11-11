@@ -1,0 +1,19 @@
+provider: cloudbees
+apis_io: https://apis.io/providers/cloudbees/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      created_at: createdAt
+      environment_id: environment
+      name:
+      - name
+      - label
+      version: version
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/cloudbees-cloudbees-unify-api-current-openapi.yml#GET /v4/components/{componentId}/runs/{runId}/deployments
+    - openapi/_original/cloudbees-cloudbees-unify-api-current-openapi.yml#POST /v4/components/{componentId}/runs/{runId}/deployments

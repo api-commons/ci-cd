@@ -1,0 +1,32 @@
+provider: release
+apis_io: https://apis.io/providers/release/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/release-openapi-original.json#GET /apps/{app_id}/pipelines
+    - openapi/_original/release-openapi-original.json#GET /apps/{app_id}/pipelines/{id}
+    - openapi/_original/release-openapi-original.json#GET /apps/{app_id}/spaces/{space_id}/pipelines
+    - openapi/_original/release-openapi-original.json#GET /apps/{app_id}/spaces/{space_id}/pipelines/{id}
+    - openapi/_original/release-openapi-original.json#POST /apps/{app_id}/spaces/{space_id}/pipelines
+  run:
+    path_segment:
+    - builds
+    properties:
+      id: id
+      created_at: created_at
+      started_at: started_at
+      branch: branch
+      name: name
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/release-openapi-original.json#GET /apps/{app_id}/builds
+    - openapi/_original/release-openapi-original.json#GET /apps/{app_id}/builds/{id}
+    - openapi/_original/release-openapi-original.json#POST /apps/{app_id}/builds

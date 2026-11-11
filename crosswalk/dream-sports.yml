@@ -1,0 +1,22 @@
+provider: dream-sports
+apis_io: https://apis.io/providers/dream-sports/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    - deploy
+    properties:
+      id: id
+      status: status
+      name:
+      - name
+      - label
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/dream-sports-delivr-ota-openapi.yml#DELETE /apps/{appName}/deployments/{deploymentName}
+    - openapi/_original/dream-sports-delivr-ota-openapi.yml#GET /apps/{appName}/deployments
+    - openapi/_original/dream-sports-delivr-ota-openapi.yml#GET /apps/{appName}/deployments/{deploymentName}
+    - openapi/_original/dream-sports-delivr-ota-openapi.yml#PATCH /apps/{appName}/deployments/{deploymentName}
+    - openapi/_original/dream-sports-delivr-ota-openapi.yml#POST /apps/{appName}/deployments

@@ -1,0 +1,47 @@
+provider: buildkite-com
+apis_io: https://apis.io/providers/buildkite-com/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      id:
+      - id
+      - slug
+      created_at: created_at
+      description: description
+      repository: repository
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/buildkite-rest-api-openapi.yml#DELETE /organizations/{org}/pipelines/{pipeline}
+    - openapi/_original/buildkite-rest-api-openapi.yml#GET /organizations/{org}/pipelines
+    - openapi/_original/buildkite-rest-api-openapi.yml#GET /organizations/{org}/pipelines/{pipeline}
+    - openapi/_original/buildkite-rest-api-openapi.yml#PATCH /organizations/{org}/pipelines/{pipeline}
+    - openapi/_original/buildkite-rest-api-openapi.yml#POST /organizations/{org}/pipelines
+  run:
+    path_segment:
+    - builds
+    properties:
+      status: state
+      id: id
+      created_at: created_at
+      started_at: started_at
+      branch: branch
+      finished_at: finished_at
+      commit_sha: commit
+      number: number
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/buildkite-rest-api-openapi.yml#GET /organizations/{org}/pipelines/{pipeline}/builds
+    - openapi/_original/buildkite-rest-api-openapi.yml#GET /organizations/{org}/pipelines/{pipeline}/builds/{number}
+    - openapi/_original/buildkite-rest-api-openapi.yml#POST /organizations/{org}/pipelines/{pipeline}/builds
+  artifact:
+    path_segment:
+    - artifacts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/buildkite-rest-api-openapi.yml#GET /organizations/{org}/pipelines/{pipeline}/builds/{number}/artifacts

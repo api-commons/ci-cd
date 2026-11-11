@@ -1,0 +1,56 @@
+provider: esper
+apis_io: https://apis.io/providers/esper/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      name: name
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/esper-openapi.json#DELETE /pipelines/v0/pipelines/{pipeline_id}/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/{pipeline_id}/
+    - openapi/_original/esper-openapi.json#POST /pipelines/v0/pipelines/
+    - openapi/_original/esper-openapi.json#PUT /pipelines/v0/pipelines/{pipeline_id}/
+  run:
+    path_segment:
+    - runs
+    - builds
+    properties:
+      status: status
+      created_at: created_at
+      updated_at: updated_at
+      created_by: created_by
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/esper-openapi.json#DELETE /pipelines/v0/pipelines/{pipeline_id}/runs/{pipeline_run_id}/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/{pipeline_id}/runs/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/{pipeline_id}/runs/{pipeline_run_id}/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/runs/
+    - openapi/_original/esper-openapi.json#GET /v1/foundry/builds/
+  job:
+    path_segment:
+    - stages
+    properties:
+      name: name
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/esper-openapi.json#DELETE /pipelines/v0/pipelines/{pipeline_id}/stages/{stage_id}/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/{pipeline_id}/stages/
+    - openapi/_original/esper-openapi.json#GET /pipelines/v0/pipelines/{pipeline_id}/stages/{stage_id}/
+    - openapi/_original/esper-openapi.json#POST /pipelines/v0/pipelines/{pipeline_id}/stages/
+    - openapi/_original/esper-openapi.json#PUT /pipelines/v0/pipelines/{pipeline_id}/stages/{stage_id}/
+  artifact:
+    path_segment:
+    - artifacts
+    properties:
+      id: id
+      metadata: metadata
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/esper-openapi.json#DELETE /v2/tenant-apps/{appId}/versions/{versionId}/artifacts/{artifactId}
+    - openapi/_original/esper-openapi.json#POST /v2/tenant-apps/{appId}/versions/{versionId}/artifacts

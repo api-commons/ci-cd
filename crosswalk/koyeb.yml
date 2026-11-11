@@ -1,0 +1,18 @@
+provider: koyeb
+apis_io: https://apis.io/providers/koyeb/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      updated_at: updated_at
+      version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/koyeb-openapi.json#GET /v1/deployments
+    - openapi/_original/koyeb-openapi.json#GET /v1/deployments/{id}

@@ -1,0 +1,21 @@
+provider: deno
+apis_io: https://apis.io/providers/deno/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    - deploy
+    properties:
+      id: id
+      status: status
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/deno-deploy-rest-api-openapi.yml#DELETE /deployments/{deploymentId}
+    - openapi/_original/deno-deploy-rest-api-openapi.yml#GET /deployments/{deploymentId}
+    - openapi/_original/deno-deploy-rest-api-openapi.yml#GET /projects/{projectId}/deployments
+    - openapi/_original/deno-deploy-rest-api-openapi.yml#POST /projects/{projectId}/deployments
+    - openapi/_original/deno-deploy-v2-api-openapi.yml#POST /apps/{app}/deploy

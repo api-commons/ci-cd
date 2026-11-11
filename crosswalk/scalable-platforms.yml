@@ -1,0 +1,16 @@
+provider: scalable-platforms
+apis_io: https://apis.io/providers/scalable-platforms/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/scalable-platforms-openapi.yml#DELETE /v13/deployments/{id}
+    - openapi/_original/scalable-platforms-openapi.yml#GET /v13/deployments/{id}
+    - openapi/_original/scalable-platforms-openapi.yml#GET /v6/deployments
+    - openapi/_original/scalable-platforms-openapi.yml#POST /v13/deployments

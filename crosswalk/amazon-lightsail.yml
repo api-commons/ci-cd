@@ -1,0 +1,16 @@
+provider: amazon-lightsail
+apis_io: https://apis.io/providers/amazon-lightsail/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      status: state
+      created_at: createdAt
+      version: version
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/amazon-lightsail-openapi_2.yml#GET /ls/api/2016-11-28/container-services/{serviceName}/deployments
+    - openapi/_original/amazon-lightsail-openapi_2.yml#POST /ls/api/2016-11-28/container-services/{serviceName}/deployments

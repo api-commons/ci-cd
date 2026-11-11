@@ -1,0 +1,21 @@
+provider: codesphere
+apis_io: https://apis.io/providers/codesphere/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipeline
+    properties:
+      status: state
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/codesphere-openapi-original.json#GET /workspaces/{workspaceId}/pipeline/{stage}
+  deployment:
+    path_segment:
+    - deploy
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/codesphere-openapi-original.json#POST /workspaces/{workspaceId}/landscape/deploy
+    - openapi/_original/codesphere-openapi-original.json#POST /workspaces/{workspaceId}/landscape/deploy/{profile}

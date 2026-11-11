@@ -1,0 +1,15 @@
+provider: spectro-cloud
+apis_io: https://apis.io/providers/spectro-cloud/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployment
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/spectro-cloud-palette-openapi.json#POST /v1/dashboard/spectroclusters/{uid}/workloads/deployment
+    - openapi/_original/spectro-cloud-palette-openapi.json#POST /v1/dashboard/workspaces/{uid}/spectroclusters/workloads/deployment
+    - openapi/_original/spectrocloud-palette.yaml#POST /v1/dashboard/spectroclusters/{uid}/workloads/deployment
+    - openapi/_original/spectrocloud-palette.yaml#POST /v1/dashboard/workspaces/{uid}/spectroclusters/workloads/deployment

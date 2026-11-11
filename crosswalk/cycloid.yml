@@ -1,0 +1,19 @@
+provider: cycloid
+apis_io: https://apis.io/providers/cycloid/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cycloid-api-openapi.yml#GET /organizations/{organization_canonical}/pipelines
+  environment:
+    path_segment:
+    - environments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cycloid-api-openapi.yml#GET /organizations/{organization_canonical}/projects/{project_canonical}/environments

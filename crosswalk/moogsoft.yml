@@ -1,0 +1,21 @@
+provider: moogsoft
+apis_io: https://apis.io/providers/moogsoft/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      id: id
+      created_at: created
+      status: status
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/moogsoft-workflow-engine-service-openapi.yaml#DELETE /v1/workflows/{id}
+    - openapi/_original/moogsoft-workflow-engine-service-openapi.yaml#GET /v1/workflows
+    - openapi/_original/moogsoft-workflow-engine-service-openapi.yaml#GET /v1/workflows/{id}
+    - openapi/_original/moogsoft-workflow-engine-service-openapi.yaml#PATCH /v1/workflows/{id}
+    - openapi/_original/moogsoft-workflow-engine-service-openapi.yaml#POST /v1/workflows

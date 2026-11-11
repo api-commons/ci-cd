@@ -1,0 +1,20 @@
+provider: bentoml
+apis_io: https://apis.io/providers/bentoml/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      status: status
+      created_at: created_at
+      name: name
+      updated_at: updated_at
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#DELETE /api/v1/clusters/{clusterName}/namespaces/{kubeNamespace}/deployments/{deploymentName}
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#DELETE /api/v2/deployments/{deploymentName}
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/admin/v1/deployments
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/v1/bento_repositories/{bentoRepositoryName}/bentos/{version}/deployments
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/v1/bento_repositories/{bentoRepositoryName}/deployments

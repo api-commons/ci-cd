@@ -1,0 +1,13 @@
+provider: env0
+apis_io: https://apis.io/providers/env0/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/env0-openapi.yml#GET /environments/{environmentId}/deployments/{deploymentId}
+    - openapi/_original/env0-openapi.yml#POST /environments/{environmentId}/deployments

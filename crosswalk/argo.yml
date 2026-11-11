@@ -1,0 +1,16 @@
+provider: argo
+apis_io: https://apis.io/providers/argo/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/argo-workflows-openapi.yml#GET /workflows/{namespace}
+    - openapi/_original/argo-workflows-openapi.yml#POST /workflows/{namespace}
+    - openapi/_original/openapi.yml#GET /workflows/{namespace}
+    - openapi/_original/openapi.yml#POST /workflows/{namespace}

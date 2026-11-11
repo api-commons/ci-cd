@@ -1,0 +1,18 @@
+provider: outsystems
+apis_io: https://apis.io/providers/outsystems/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    - deployment
+    properties:
+      created_at: CreatedOn
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lifetime-api.json#DELETE /deployments/{DeploymentKey}/
+    - openapi/_original/lifetime-api.json#GET /deployments/
+    - openapi/_original/lifetime-api.json#GET /deployments/{DeploymentKey}/
+    - openapi/_original/lifetime-api.json#POST /deployments/
+    - openapi/_original/lifetime-api.json#POST /environments/{EnvironmentKey}/deployment/

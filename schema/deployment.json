@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/deployment.json",
+  "title": "Deployment",
+  "description": "The common deployment in CI/CD, distilled from 48 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.646,
+      "x-commons-providers": 31,
+      "x-commons-spellings": [
+        "id",
+        "deploymentId",
+        "uuid",
+        "ID"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.604,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "conclusion",
+        "Status"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.417,
+      "x-commons-providers": 20,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "createTime",
+        "createdOn",
+        "CreatedOn"
+      ],
+      "format": "date-time"
+    },
+    "environment_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.292,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "environment",
+        "environmentId",
+        "environmentName"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.271,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "name",
+        "label",
+        "title"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "updateTime",
+        "modified"
+      ],
+      "format": "date-time"
+    },
+    "version": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.229,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "version",
+        "tag",
+        "release",
+        "image"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "ci-cd",
+    "concept": "deployment",
+    "providers": 48,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

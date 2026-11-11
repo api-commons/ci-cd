@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/ci-cd/main/schema/job.json",
+  "title": "Job",
+  "description": "The common job in CI/CD, distilled from 7 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.714,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "name"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.571,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "created_at"
+      ],
+      "format": "date-time"
+    },
+    "id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.571,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "id"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.571,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "status",
+        "conclusion"
+      ]
+    },
+    "finished_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "completed_at"
+      ],
+      "format": "date-time"
+    },
+    "run_id": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "run_id"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "ci-cd",
+    "concept": "job",
+    "providers": 7,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

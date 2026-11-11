@@ -1,0 +1,479 @@
+context: ci-cd
+generated: '2026-11-10'
+adopters:
+- provider: airbrake
+  apis_io: https://apis.io/providers/airbrake/
+  crosswalk: crosswalk/airbrake.yml
+  concepts:
+  - deployment
+- provider: alpic
+  apis_io: https://apis.io/providers/alpic/
+  crosswalk: crosswalk/alpic.yml
+  concepts:
+  - deployment
+- provider: amazon-codedeploy
+  apis_io: https://apis.io/providers/amazon-codedeploy/
+  crosswalk: crosswalk/amazon-codedeploy.yml
+  concepts:
+  - deployment
+- provider: amazon-launch-wizard
+  apis_io: https://apis.io/providers/amazon-launch-wizard/
+  crosswalk: crosswalk/amazon-launch-wizard.yml
+  concepts:
+  - deployment
+- provider: amazon-lightsail
+  apis_io: https://apis.io/providers/amazon-lightsail/
+  crosswalk: crosswalk/amazon-lightsail.yml
+  concepts:
+  - deployment
+- provider: aptible
+  apis_io: https://apis.io/providers/aptible/
+  crosswalk: crosswalk/aptible.yml
+  concepts:
+  - deployment
+- provider: argo
+  apis_io: https://apis.io/providers/argo/
+  crosswalk: crosswalk/argo.yml
+  concepts:
+  - pipeline
+- provider: assertible
+  apis_io: https://apis.io/providers/assertible/
+  crosswalk: crosswalk/assertible.yml
+  concepts:
+  - deployment
+- provider: athenian
+  apis_io: https://apis.io/providers/athenian/
+  crosswalk: crosswalk/athenian.yml
+  concepts:
+  - deployment
+- provider: azure-dev-ops
+  apis_io: https://apis.io/providers/azure-dev-ops/
+  crosswalk: crosswalk/azure-dev-ops.yml
+  concepts:
+  - pipeline
+- provider: azure-devops
+  apis_io: https://apis.io/providers/azure-devops/
+  crosswalk: crosswalk/azure-devops.yml
+  concepts:
+  - artifact
+  - deployment
+  - pipeline
+  - run
+- provider: bentoml
+  apis_io: https://apis.io/providers/bentoml/
+  crosswalk: crosswalk/bentoml.yml
+  concepts:
+  - deployment
+- provider: bitbucket-pipelines
+  apis_io: https://apis.io/providers/bitbucket-pipelines/
+  crosswalk: crosswalk/bitbucket-pipelines.yml
+  concepts:
+  - deployment
+  - environment
+  - pipeline
+  - run
+- provider: buildkite
+  apis_io: https://apis.io/providers/buildkite/
+  crosswalk: crosswalk/buildkite.yml
+  concepts:
+  - artifact
+  - pipeline
+  - run
+- provider: buildkite-com
+  apis_io: https://apis.io/providers/buildkite-com/
+  crosswalk: crosswalk/buildkite-com.yml
+  concepts:
+  - artifact
+  - pipeline
+  - run
+- provider: choreo
+  apis_io: https://apis.io/providers/choreo/
+  crosswalk: crosswalk/choreo.yml
+  concepts:
+  - deployment
+- provider: circleci
+  apis_io: https://apis.io/providers/circleci/
+  crosswalk: crosswalk/circleci.yml
+  concepts:
+  - artifact
+  - job
+  - pipeline
+- provider: cloudbees
+  apis_io: https://apis.io/providers/cloudbees/
+  crosswalk: crosswalk/cloudbees.yml
+  concepts:
+  - deployment
+- provider: codefresh
+  apis_io: https://apis.io/providers/codefresh/
+  crosswalk: crosswalk/codefresh.yml
+  concepts:
+  - deployment
+  - environment
+  - pipeline
+  - run
+- provider: codesphere
+  apis_io: https://apis.io/providers/codesphere/
+  crosswalk: crosswalk/codesphere.yml
+  concepts:
+  - deployment
+  - pipeline
+- provider: continuous-delivery-foundation
+  apis_io: https://apis.io/providers/continuous-delivery-foundation/
+  crosswalk: crosswalk/continuous-delivery-foundation.yml
+  concepts:
+  - artifact
+  - environment
+  - job
+  - pipeline
+  - run
+- provider: coolify
+  apis_io: https://apis.io/providers/coolify/
+  crosswalk: crosswalk/coolify.yml
+  concepts:
+  - deployment
+- provider: cycloid
+  apis_io: https://apis.io/providers/cycloid/
+  crosswalk: crosswalk/cycloid.yml
+  concepts:
+  - environment
+  - pipeline
+- provider: delinea
+  apis_io: https://apis.io/providers/delinea/
+  crosswalk: crosswalk/delinea.yml
+  concepts:
+  - pipeline
+  - run
+- provider: deno
+  apis_io: https://apis.io/providers/deno/
+  crosswalk: crosswalk/deno.yml
+  concepts:
+  - deployment
+- provider: deployxa
+  apis_io: https://apis.io/providers/deployxa/
+  crosswalk: crosswalk/deployxa.yml
+  concepts:
+  - deployment
+- provider: devtron
+  apis_io: https://apis.io/providers/devtron/
+  crosswalk: crosswalk/devtron.yml
+  concepts:
+  - deployment
+- provider: dream-sports
+  apis_io: https://apis.io/providers/dream-sports/
+  crosswalk: crosswalk/dream-sports.yml
+  concepts:
+  - deployment
+- provider: edge-delta
+  apis_io: https://apis.io/providers/edge-delta/
+  crosswalk: crosswalk/edge-delta.yml
+  concepts:
+  - deployment
+- provider: env0
+  apis_io: https://apis.io/providers/env0/
+  crosswalk: crosswalk/env0.yml
+  concepts:
+  - deployment
+- provider: esper
+  apis_io: https://apis.io/providers/esper/
+  crosswalk: crosswalk/esper.yml
+  concepts:
+  - artifact
+  - job
+  - pipeline
+  - run
+- provider: facets
+  apis_io: https://apis.io/providers/facets/
+  crosswalk: crosswalk/facets.yml
+  concepts:
+  - artifact
+  - deployment
+  - environment
+  - pipeline
+  - run
+- provider: flightcontrol
+  apis_io: https://apis.io/providers/flightcontrol/
+  crosswalk: crosswalk/flightcontrol.yml
+  concepts:
+  - deployment
+- provider: gitea
+  apis_io: https://apis.io/providers/gitea/
+  crosswalk: crosswalk/gitea.yml
+  concepts:
+  - artifact
+  - job
+  - pipeline
+  - run
+- provider: github-actions
+  apis_io: https://apis.io/providers/github-actions/
+  crosswalk: crosswalk/github-actions.yml
+  concepts:
+  - artifact
+  - job
+  - pipeline
+  - run
+- provider: github-enterprise
+  apis_io: https://apis.io/providers/github-enterprise/
+  crosswalk: crosswalk/github-enterprise.yml
+  concepts:
+  - pipeline
+  - run
+- provider: gitlab-ci
+  apis_io: https://apis.io/providers/gitlab-ci/
+  crosswalk: crosswalk/gitlab-ci.yml
+  concepts:
+  - deployment
+- provider: google-apps-script
+  apis_io: https://apis.io/providers/google-apps-script/
+  crosswalk: crosswalk/google-apps-script.yml
+  concepts:
+  - deployment
+- provider: harness
+  apis_io: https://apis.io/providers/harness/
+  crosswalk: crosswalk/harness.yml
+  concepts:
+  - artifact
+  - deployment
+  - environment
+  - job
+  - pipeline
+  - run
+- provider: heroku
+  apis_io: https://apis.io/providers/heroku/
+  crosswalk: crosswalk/heroku.yml
+  concepts:
+  - pipeline
+  - run
+- provider: humanitec
+  apis_io: https://apis.io/providers/humanitec/
+  crosswalk: crosswalk/humanitec.yml
+  concepts:
+  - deployment
+  - environment
+  - job
+  - pipeline
+  - run
+- provider: jetbrains
+  apis_io: https://apis.io/providers/jetbrains/
+  crosswalk: crosswalk/jetbrains.yml
+  concepts:
+  - pipeline
+  - run
+- provider: jfrog
+  apis_io: https://apis.io/providers/jfrog/
+  crosswalk: crosswalk/jfrog.yml
+  concepts:
+  - artifact
+  - deployment
+  - pipeline
+  - run
+- provider: knoxcall
+  apis_io: https://apis.io/providers/knoxcall/
+  crosswalk: crosswalk/knoxcall.yml
+  concepts:
+  - environment
+  - pipeline
+  - run
+- provider: koyeb
+  apis_io: https://apis.io/providers/koyeb/
+  crosswalk: crosswalk/koyeb.yml
+  concepts:
+  - deployment
+- provider: kubeshop
+  apis_io: https://apis.io/providers/kubeshop/
+  crosswalk: crosswalk/kubeshop.yml
+  concepts:
+  - artifact
+  - environment
+  - pipeline
+  - run
+- provider: laravel
+  apis_io: https://apis.io/providers/laravel/
+  crosswalk: crosswalk/laravel.yml
+  concepts:
+  - deployment
+- provider: launchdarkly
+  apis_io: https://apis.io/providers/launchdarkly/
+  crosswalk: crosswalk/launchdarkly.yml
+  concepts:
+  - deployment
+- provider: linearb
+  apis_io: https://apis.io/providers/linearb/
+  crosswalk: crosswalk/linearb.yml
+  concepts:
+  - deployment
+- provider: mabl
+  apis_io: https://apis.io/providers/mabl/
+  crosswalk: crosswalk/mabl.yml
+  concepts:
+  - deployment
+- provider: mezmo
+  apis_io: https://apis.io/providers/mezmo/
+  crosswalk: crosswalk/mezmo.yml
+  concepts:
+  - pipeline
+- provider: microsoft-azure-pipelines
+  apis_io: https://apis.io/providers/microsoft-azure-pipelines/
+  crosswalk: crosswalk/microsoft-azure-pipelines.yml
+  concepts:
+  - artifact
+  - pipeline
+  - run
+- provider: microsoft-bicep
+  apis_io: https://apis.io/providers/microsoft-bicep/
+  crosswalk: crosswalk/microsoft-bicep.yml
+  concepts:
+  - deployment
+- provider: moogsoft
+  apis_io: https://apis.io/providers/moogsoft/
+  crosswalk: crosswalk/moogsoft.yml
+  concepts:
+  - pipeline
+- provider: netlify
+  apis_io: https://apis.io/providers/netlify/
+  crosswalk: crosswalk/netlify.yml
+  concepts:
+  - deployment
+- provider: new-relic
+  apis_io: https://apis.io/providers/new-relic/
+  crosswalk: crosswalk/new-relic.yml
+  concepts:
+  - deployment
+- provider: nomad
+  apis_io: https://apis.io/providers/nomad/
+  crosswalk: crosswalk/nomad.yml
+  concepts:
+  - deployment
+- provider: nuon
+  apis_io: https://apis.io/providers/nuon/
+  crosswalk: crosswalk/nuon.yml
+  concepts:
+  - deployment
+  - job
+  - pipeline
+  - run
+- provider: outsystems
+  apis_io: https://apis.io/providers/outsystems/
+  crosswalk: crosswalk/outsystems.yml
+  concepts:
+  - deployment
+- provider: overops
+  apis_io: https://apis.io/providers/overops/
+  crosswalk: crosswalk/overops.yml
+  concepts:
+  - deployment
+- provider: pulumi
+  apis_io: https://apis.io/providers/pulumi/
+  crosswalk: crosswalk/pulumi.yml
+  concepts:
+  - deployment
+- provider: puppet
+  apis_io: https://apis.io/providers/puppet/
+  crosswalk: crosswalk/puppet.yml
+  concepts:
+  - deployment
+- provider: raygun
+  apis_io: https://apis.io/providers/raygun/
+  crosswalk: crosswalk/raygun.yml
+  concepts:
+  - deployment
+- provider: release
+  apis_io: https://apis.io/providers/release/
+  crosswalk: crosswalk/release.yml
+  concepts:
+  - pipeline
+  - run
+- provider: render
+  apis_io: https://apis.io/providers/render/
+  crosswalk: crosswalk/render.yml
+  concepts:
+  - deployment
+  - environment
+  - pipeline
+  - run
+- provider: rollbar
+  apis_io: https://apis.io/providers/rollbar/
+  crosswalk: crosswalk/rollbar.yml
+  concepts:
+  - deployment
+- provider: runwhen
+  apis_io: https://apis.io/providers/runwhen/
+  crosswalk: crosswalk/runwhen.yml
+  concepts:
+  - pipeline
+  - run
+- provider: scalable-platforms
+  apis_io: https://apis.io/providers/scalable-platforms/
+  crosswalk: crosswalk/scalable-platforms.yml
+  concepts:
+  - deployment
+- provider: semaphore
+  apis_io: https://apis.io/providers/semaphore/
+  crosswalk: crosswalk/semaphore.yml
+  concepts:
+  - pipeline
+- provider: sevalla
+  apis_io: https://apis.io/providers/sevalla/
+  crosswalk: crosswalk/sevalla.yml
+  concepts:
+  - deployment
+  - pipeline
+- provider: spectro-cloud
+  apis_io: https://apis.io/providers/spectro-cloud/
+  crosswalk: crosswalk/spectro-cloud.yml
+  concepts:
+  - deployment
+- provider: spinnaker
+  apis_io: https://apis.io/providers/spinnaker/
+  crosswalk: crosswalk/spinnaker.yml
+  concepts:
+  - job
+  - pipeline
+  - run
+- provider: teamcity
+  apis_io: https://apis.io/providers/teamcity/
+  crosswalk: crosswalk/teamcity.yml
+  concepts:
+  - artifact
+  - pipeline
+  - run
+- provider: terminal-use
+  apis_io: https://apis.io/providers/terminal-use/
+  crosswalk: crosswalk/terminal-use.yml
+  concepts:
+  - deployment
+- provider: test-driven-development
+  apis_io: https://apis.io/providers/test-driven-development/
+  crosswalk: crosswalk/test-driven-development.yml
+  concepts:
+  - pipeline
+  - run
+- provider: upsun
+  apis_io: https://apis.io/providers/upsun/
+  crosswalk: crosswalk/upsun.yml
+  concepts:
+  - deployment
+- provider: vellum
+  apis_io: https://apis.io/providers/vellum/
+  crosswalk: crosswalk/vellum.yml
+  concepts:
+  - deployment
+- provider: venafi
+  apis_io: https://apis.io/providers/venafi/
+  crosswalk: crosswalk/venafi.yml
+  concepts:
+  - pipeline
+- provider: vers
+  apis_io: https://apis.io/providers/vers/
+  crosswalk: crosswalk/vers.yml
+  concepts:
+  - deployment
+- provider: woodpecker-ci
+  apis_io: https://apis.io/providers/woodpecker-ci/
+  crosswalk: crosswalk/woodpecker-ci.yml
+  concepts:
+  - pipeline
+- provider: zippykid
+  apis_io: https://apis.io/providers/zippykid/
+  crosswalk: crosswalk/zippykid.yml
+  concepts:
+  - deployment

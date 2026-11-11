@@ -1,0 +1,17 @@
+provider: azure-dev-ops
+apis_io: https://apis.io/providers/azure-dev-ops/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - pipelines
+    properties:
+      repository: project
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/azure-dev-ops-openapi.yaml#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOps/pipelines/{pipelineName}
+    - openapi/_original/azure-dev-ops-openapi.yaml#GET /subscriptions/{subscriptionId}/providers/Microsoft.DevOps/pipelines
+    - openapi/_original/azure-dev-ops-openapi.yaml#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOps/pipelines
+    - openapi/_original/azure-dev-ops-openapi.yaml#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOps/pipelines/{pipelineName}
+    - openapi/_original/azure-dev-ops-openapi.yaml#PATCH /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevOps/pipelines/{pipelineName}

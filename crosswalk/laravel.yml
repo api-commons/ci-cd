@@ -1,0 +1,17 @@
+provider: laravel
+apis_io: https://apis.io/providers/laravel/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/laravel-forge-openapi.json#GET /orgs/{organization}/servers/{server}/sites/{site}/deployments
+    - openapi/_original/laravel-forge-openapi.json#GET /orgs/{organization}/servers/{server}/sites/{site}/deployments/{deployment}
+    - openapi/_original/laravel-forge-openapi.json#POST /orgs/{organization}/servers/{server}/sites/{site}/deployments
+    - openapi/_original/laravel-openapi.json#GET /deployments/{deployment}
+    - openapi/_original/laravel-openapi.json#GET /environments/{environment}/deployments

@@ -1,0 +1,18 @@
+provider: microsoft-bicep
+apis_io: https://apis.io/providers/microsoft-bicep/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/microsoft-bicep-deployments-openapi.yml#DELETE /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Resources/deployments/{deploymentName}
+    - openapi/_original/microsoft-bicep-deployments-openapi.yml#GET /subscriptions/{subscriptionId}/providers/Microsoft.Resources/deployments/{deploymentName}
+    - openapi/_original/microsoft-bicep-deployments-openapi.yml#GET /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Resources/deployments
+    - openapi/_original/microsoft-bicep-deployments-openapi.yml#GET /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Resources/deployments/{deploymentName}
+    - openapi/_original/microsoft-bicep-deployments-openapi.yml#PUT /subscriptions/{subscriptionId}/providers/Microsoft.Resources/deployments/{deploymentName}

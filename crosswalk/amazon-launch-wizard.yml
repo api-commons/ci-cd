@@ -1,0 +1,15 @@
+provider: amazon-launch-wizard
+apis_io: https://apis.io/providers/amazon-launch-wizard/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/amazon-launch-wizard-openapi.yml#DELETE /deployments/{deploymentId}
+    - openapi/_original/amazon-launch-wizard-openapi.yml#GET /deployments
+    - openapi/_original/amazon-launch-wizard-openapi.yml#GET /deployments/{deploymentId}
+    - openapi/_original/amazon-launch-wizard-openapi.yml#POST /deployments

@@ -1,0 +1,14 @@
+provider: airbrake
+apis_io: https://apis.io/providers/airbrake/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deploys
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/airbrake-openapi.yml#GET /api/v4/projects/{project_id}/deploys
+    - openapi/_original/airbrake-openapi.yml#GET /api/v4/projects/{project_id}/deploys/{deploy_id}
+    - openapi/_original/airbrake-openapi.yml#POST /api/v4/projects/{project_id}/deploys

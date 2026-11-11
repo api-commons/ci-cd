@@ -1,0 +1,21 @@
+provider: test-driven-development
+apis_io: https://apis.io/providers/test-driven-development/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/test-driven-development-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows
+    - openapi/_original/test-driven-development-openapi.yml#GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}
+  run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/test-driven-development-openapi.yml#GET /repos/{owner}/{repo}/actions/runs
+    - openapi/_original/test-driven-development-openapi.yml#GET /repos/{owner}/{repo}/actions/runs/{run_id}

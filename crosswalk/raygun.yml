@@ -1,0 +1,18 @@
+provider: raygun
+apis_io: https://apis.io/providers/raygun/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  deployment:
+    path_segment:
+    - deployments
+    properties:
+      created_at: createdAt
+      version: version
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/raygun-public-api-openapi.yml#DELETE /applications/{application-identifier}/deployments/{deployment-identifier}
+    - openapi/_original/raygun-public-api-openapi.yml#GET /applications/{application-identifier}/deployments
+    - openapi/_original/raygun-public-api-openapi.yml#GET /applications/{application-identifier}/deployments/{deployment-identifier}
+    - openapi/_original/raygun-public-api-openapi.yml#PATCH /applications/{application-identifier}/deployments/{deployment-identifier}
+    - openapi/_original/raygun-public-api-openapi.yml#POST /applications/api-key/{api-key}/deployments

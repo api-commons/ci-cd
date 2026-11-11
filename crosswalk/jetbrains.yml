@@ -1,0 +1,20 @@
+provider: jetbrains
+apis_io: https://apis.io/providers/jetbrains/
+context: ci-cd
+generated: '2026-11-10'
+concepts:
+  pipeline:
+    path_segment:
+    - buildtypes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/jetbrains-teamcity-openapi.yml#GET /buildTypes
+  run:
+    path_segment:
+    - builds
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/jetbrains-teamcity-openapi.yml#GET /builds
+    - openapi/_original/jetbrains-teamcity-openapi.yml#GET /builds/{buildLocator}

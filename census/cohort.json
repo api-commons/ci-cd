@@ -1,0 +1,1734 @@
+[
+ {
+  "slug": "airbrake",
+  "specs": [
+   "openapi/_original/airbrake-openapi.yml"
+  ]
+ },
+ {
+  "slug": "akuity",
+  "specs": [
+   "openapi/_original/akuity-apikey.json",
+   "openapi/_original/akuity-argocd.json",
+   "openapi/_original/akuity-auth.json",
+   "openapi/_original/akuity-customrole.json",
+   "openapi/_original/akuity-extension.json",
+   "openapi/_original/akuity-kargo.json",
+   "openapi/_original/akuity-organization.json",
+   "openapi/_original/akuity-system.json"
+  ]
+ },
+ {
+  "slug": "allquiet",
+  "specs": [
+   "openapi/_original/allquiet-openapi.json"
+  ]
+ },
+ {
+  "slug": "alpic",
+  "specs": [
+   "openapi/_original/alpic-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "amazon-app-runner",
+  "specs": [
+   "openapi/_original/amazon-app-runner-openapi.json",
+   "openapi/_original/amazon-app-runner-openapi.yaml",
+   "openapi/_original/amazon-app-runner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-cloudformation",
+  "specs": [
+   "openapi/_original/amazon-cloudformation-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-codeartifact",
+  "specs": [
+   "openapi/_original/amazon-codeartifact-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-codebuild",
+  "specs": [
+   "openapi/_original/amazon-codebuild-openapi-original.yaml",
+   "openapi/_original/amazon-codebuild-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-codecatalyst",
+  "specs": [
+   "openapi/_original/amazon-codecatalyst-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-codedeploy",
+  "specs": [
+   "openapi/_original/amazon-codedeploy-openapi-original.yaml",
+   "openapi/_original/amazon-codedeploy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-codeguru-profiler",
+  "specs": [
+   "openapi/_original/amazon-codeguru-profiler-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-codeguru-reviewer",
+  "specs": [
+   "openapi/_original/amazon-codeguru-reviewer-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-codepipeline",
+  "specs": [
+   "openapi/_original/amazon-codepipeline-openapi-original.yaml",
+   "openapi/_original/amazon-codepipeline-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-codestar",
+  "specs": [
+   "openapi/_original/amazon-codestar-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-devops-guru",
+  "specs": [
+   "openapi/_original/amazon-devops-guru-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-elastic-beanstalk",
+  "specs": [
+   "openapi/_original/amazon-elastic-beanstalk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-incident-manager",
+  "specs": [
+   "openapi/_original/amazon-incident-manager-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-launch-wizard",
+  "specs": [
+   "openapi/_original/amazon-launch-wizard-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-lightsail",
+  "specs": [
+   "openapi/_original/amazon-lightsail-openapi.yml",
+   "openapi/_original/amazon-lightsail-openapi_2.yml",
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-proton",
+  "specs": [
+   "openapi/_original/amazon-proton-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amika",
+  "specs": [
+   "openapi/_original/amika-openapi.json"
+  ]
+ },
+ {
+  "slug": "ansible",
+  "specs": [
+   "openapi/_original/ansible-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ansible-playbooks",
+  "specs": [
+   "openapi/_original/ansible-playbooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ansible-roles",
+  "specs": [
+   "openapi/_original/ansible-roles-openapi.yml"
+  ]
+ },
+ {
+  "slug": "antimetal",
+  "specs": [
+   "openapi/_original/antimetal-external-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "appdome",
+  "specs": [
+   "openapi/_original/appdome-api-readme-slices.json",
+   "openapi/_original/appdome-mobile-risk-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "appdynamics",
+  "specs": [
+   "openapi/_original/appdynamics-alert-and-respond-api-openapi.yml",
+   "openapi/_original/appdynamics-analytics-events-api-openapi.yml",
+   "openapi/_original/appdynamics-authentication-api-openapi.yml",
+   "openapi/_original/appdynamics-cloud-observability-api-openapi.yml",
+   "openapi/_original/appdynamics-configuration-api-openapi.yml",
+   "openapi/_original/appdynamics-controller-rest-api-openapi.yml",
+   "openapi/_original/appdynamics-database-agent-api-openapi.yml",
+   "openapi/_original/appdynamics-machine-agent-api-openapi.yml",
+   "openapi/_original/appdynamics-metric-and-snapshot-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aptible",
+  "specs": [
+   "openapi/_original/aptible-cloud-openapi-original.yml",
+   "openapi/_original/aptible-deploy-openapi-original.yml",
+   "openapi/_original/aptible-tool-server-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "ardent",
+  "specs": [
+   "openapi/_original/ardent-openapi.json"
+  ]
+ },
+ {
+  "slug": "argo",
+  "specs": [
+   "openapi/_original/argo-cd-openapi.yml",
+   "openapi/_original/argo-workflows-openapi.yml",
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "argo-cd",
+  "specs": [
+   "openapi/_original/argo-cd-openapi.json"
+  ]
+ },
+ {
+  "slug": "argocd",
+  "specs": [
+   "openapi/_original/argocd-server-openapi.json"
+  ]
+ },
+ {
+  "slug": "armory",
+  "specs": [
+   "openapi/_original/armory-scale-agent-agent-accounts-openapi.yml",
+   "openapi/_original/armory-scale-agent-applications-openapi.yml",
+   "openapi/_original/armory-scale-agent-credentials-openapi.yml",
+   "openapi/_original/armory-scale-agent-infrastructure-openapi.yml",
+   "openapi/_original/armory-scale-agent-operations-openapi.yml",
+   "openapi/_original/armory-scale-agent-swagger.json"
+  ]
+ },
+ {
+  "slug": "artifactory",
+  "specs": [
+   "openapi/_original/artifactory-aql-api-openapi.yml",
+   "openapi/_original/artifactory-build-integration-api-openapi.yml",
+   "openapi/_original/artifactory-docker-registry-api-openapi.yml",
+   "openapi/_original/artifactory-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "assertible",
+  "specs": [
+   "openapi/_original/assertible-openapi.yml"
+  ]
+ },
+ {
+  "slug": "athenian",
+  "specs": [
+   "openapi/_original/athenian-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "aws-app-runner",
+  "specs": [
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-createvpcingressconnection-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-deleteautoscalingconfiguration-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-deleteobservabilityconfiguration-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-deletevpcconnector-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-deletevpcingressconnection-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-describeautoscalingconfiguration-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-describeobservabilityconfiguration-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-describevpcconnector-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-describevpcingressconnection-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-listobservabilityconfigurations-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-listtagsforresource-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-listvpcingressconnections-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-tagresource-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-untagresource-api-openapi.yml",
+   "openapi/_original/amazon-app-runner-x-amz-target-apprunner-updatevpcingressconnection-api-openapi.yml",
+   "openapi/_original/aws-app-runner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aws-codebuild",
+  "specs": [
+   "openapi/_original/amazon-codebuild-builds-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-projects-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-batchdeletebuilds-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-batchgetbuildbatches-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-batchgetbuilds-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-batchgetprojects-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-batchgetreportgroups-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-batchgetreports-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-createproject-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-createreportgroup-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-createwebhook-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deletebuildbatch-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deleteproject-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deletereport-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deletereportgroup-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deleteresourcepolicy-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deletesourcecredentials-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-deletewebhook-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-describecodecoverages-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-describetestcases-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-getreportgrouptrend-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-getresourcepolicy-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-importsourcecredentials-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-invalidateprojectcache-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listbuildbatches-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listbuildbatchesforproject-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listbuilds-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listbuildsforproject-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listcuratedenvironmentimages-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listprojects-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listreportgroups-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listreports-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listreportsforreportgroup-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listsharedprojects-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listsharedreportgroups-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-listsourcecredentials-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-putresourcepolicy-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-retrybuild-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-retrybuildbatch-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-startbuild-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-startbuildbatch-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-stopbuild-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-stopbuildbatch-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-updateproject-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-updateprojectvisibility-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-updatereportgroup-api-openapi.yml",
+   "openapi/_original/amazon-codebuild-x-amz-target-codebuild-20161006-updatewebhook-api-openapi.yml",
+   "openapi/_original/aws-codebuild-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aws-elastic-beanstalk",
+  "specs": [
+   "openapi/_original/amazon-elastic-beanstalk-amazon-elastic-beanstalk-aws-elastic-beanstalk-api-api-openapi.yml",
+   "openapi/_original/amazon-elastic-beanstalk-createenvironment-api-openapi.yml",
+   "openapi/_original/amazon-elastic-beanstalk-describeenvironments-api-openapi.yml",
+   "openapi/_original/amazon-elastic-beanstalk-updateenvironment-api-openapi.yml",
+   "openapi/_original/aws-elastic-beanstalk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "azure-dev-ops",
+  "specs": [
+   "openapi/_original/azure-dev-ops-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "azure-devops",
+  "specs": [
+   "openapi/_original/azure-devops-pipelines-openapi.yml",
+   "openapi/_original/azure-devops-work-items-openapi.yml"
+  ]
+ },
+ {
+  "slug": "baseten",
+  "specs": [
+   "openapi/_original/baseten-llm-openapi.json",
+   "openapi/_original/baseten-messages-openapi.json"
+  ]
+ },
+ {
+  "slug": "bazel-build",
+  "specs": [
+   "openapi/_original/bazel-central-registry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bentoml",
+  "specs": [
+   "openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "betteruptime",
+  "specs": [
+   "openapi/_original/betteruptime-uptime-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bitbucket-pipelines",
+  "specs": [
+   "openapi/_original/bitbucket-pipelines-openapi.json"
+  ]
+ },
+ {
+  "slug": "blacksmith-sh",
+  "specs": [
+   "openapi/_original/blacksmith-sh-openapi.yml"
+  ]
+ },
+ {
+  "slug": "browserstack",
+  "specs": [
+   "openapi/_original/browserstack-openapi.yml"
+  ]
+ },
+ {
+  "slug": "buildkite",
+  "specs": [
+   "openapi/_original/buildkite-openapi.yml"
+  ]
+ },
+ {
+  "slug": "buildkite-com",
+  "specs": [
+   "openapi/_original/buildkite-agent-api-openapi.yml",
+   "openapi/_original/buildkite-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "buildpacks",
+  "specs": [
+   "openapi/_original/buildpacks-kpack-swagger.json"
+  ]
+ },
+ {
+  "slug": "buildpacks-io",
+  "specs": [
+   "openapi/_original/buildpacks-registry-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bump-sh",
+  "specs": [
+   "openapi/_original/bump-sh-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bytebase",
+  "specs": [
+   "openapi/_original/bytebase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "calyptia",
+  "specs": [
+   "openapi/_original/calyptia-openapi.yml"
+  ]
+ },
+ {
+  "slug": "capy",
+  "specs": [
+   "openapi/_original/capy-openapi.json"
+  ]
+ },
+ {
+  "slug": "cast-ai",
+  "specs": [
+   "openapi/_original/cast-ai-kubernetes-cost-optimization-openapi.yml"
+  ]
+ },
+ {
+  "slug": "catchpoint",
+  "specs": [
+   "openapi/_original/catchpoint-rest-api-v2-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "checkly",
+  "specs": [
+   "openapi/_original/checkly-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "chef",
+  "specs": [
+   "openapi/_original/chef-automate-api-openapi.yml",
+   "openapi/_original/chef-habitat-builder-api-openapi.yml",
+   "openapi/_original/chef-infra-server-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chef-software",
+  "specs": [
+   "openapi/_original/chef-software-applications-applications-openapi.json",
+   "openapi/_original/chef-software-cds-cds-openapi.json",
+   "openapi/_original/chef-software-cfgmgmt-cfgmgmt-openapi.json",
+   "openapi/_original/chef-software-compliance-profiles-profiles-openapi.json",
+   "openapi/_original/chef-software-compliance-reporting-reporting-openapi.json",
+   "openapi/_original/chef-software-compliance-reporting-stats-stats-openapi.json",
+   "openapi/_original/chef-software-compliance-scanner-jobs-jobs-openapi.json",
+   "openapi/_original/chef-software-data_feed-data_feed-openapi.json",
+   "openapi/_original/chef-software-data_lifecycle-data_lifecycle-openapi.json",
+   "openapi/_original/chef-software-event_feed-event_feed-openapi.json",
+   "openapi/_original/chef-software-iam-v2-introspect-openapi.json",
+   "openapi/_original/chef-software-iam-v2-policy-openapi.json",
+   "openapi/_original/chef-software-iam-v2-rules-openapi.json",
+   "openapi/_original/chef-software-iam-v2-teams-openapi.json",
+   "openapi/_original/chef-software-iam-v2-tokens-openapi.json",
+   "openapi/_original/chef-software-iam-v2-users-openapi.json",
+   "openapi/_original/chef-software-infra_proxy-infra_proxy-openapi.json",
+   "openapi/_original/chef-software-ingest-chef-openapi.json",
+   "openapi/_original/chef-software-ingest-job_scheduler-openapi.json",
+   "openapi/_original/chef-software-nodes-manager-manager-openapi.json",
+   "openapi/_original/chef-software-nodes-nodes-openapi.json",
+   "openapi/_original/chef-software-report_manager-report_manager-openapi.json",
+   "openapi/_original/chef-software-secrets-secrets-openapi.json",
+   "openapi/_original/chef-software-user_settings-user_settings-openapi.json"
+  ]
+ },
+ {
+  "slug": "choreo",
+  "specs": [
+   "openapi/_original/choreo-api-management-openapi.yml",
+   "openapi/_original/choreo-developer-portal-openapi.yml",
+   "openapi/_original/choreo-insights-openapi.yml"
+  ]
+ },
+ {
+  "slug": "circleci",
+  "specs": [
+   "openapi/_original/circleci-rest-api-v1-openapi.yml",
+   "openapi/_original/circleci-rest-api-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudbees",
+  "specs": [
+   "openapi/_original/cloudbees-cloudbees-unify-api-current-openapi.yml",
+   "openapi/_original/cloudbees-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudsmith",
+  "specs": [
+   "openapi/_original/cloudsmith-openapi.json"
+  ]
+ },
+ {
+  "slug": "cloudtruth",
+  "specs": [
+   "openapi/_original/cloudtruth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "codacy",
+  "specs": [
+   "openapi/_original/codacy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "codeclimate",
+  "specs": [
+   "openapi/_original/codeclimate-openapi.yml"
+  ]
+ },
+ {
+  "slug": "codefresh",
+  "specs": [
+   "openapi/_original/codefresh-openapi.json"
+  ]
+ },
+ {
+  "slug": "coderabbit",
+  "specs": [
+   "openapi/_original/coderabbit-openapi.json"
+  ]
+ },
+ {
+  "slug": "codesphere",
+  "specs": [
+   "openapi/_original/codesphere-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "cognition",
+  "specs": [
+   "openapi/_original/cognition-openapi.yml"
+  ]
+ },
+ {
+  "slug": "continuous-delivery-foundation",
+  "specs": [
+   "openapi/_original/continuous-delivery-foundation-jayex-jx-api-openapi.json",
+   "openapi/_original/continuous-delivery-foundation-jenkins-pipeline-graph-view-openapi.yaml",
+   "openapi/_original/continuous-delivery-foundation-jenkins-pipeline-graph-view-openapi_2.yaml",
+   "openapi/_original/continuous-delivery-foundation-screwdriver-openapi.json",
+   "openapi/_original/continuous-delivery-foundation-screwdriver-openapi_2.json",
+   "openapi/_original/continuous-delivery-foundation-spinnaker-openapi.json",
+   "openapi/_original/continuous-delivery-foundation-spinnaker-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "coolify",
+  "specs": [
+   "openapi/_original/coolify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coralogix",
+  "specs": [
+   "openapi/_original/coralogix-openapi.json"
+  ]
+ },
+ {
+  "slug": "cycloid",
+  "specs": [
+   "openapi/_original/cycloid-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dagger",
+  "specs": [
+   "openapi/_original/dagger-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dash0",
+  "specs": [
+   "openapi/_original/dash0-openapi.json"
+  ]
+ },
+ {
+  "slug": "delinea",
+  "specs": [
+   "openapi/_original/delinea-secret-server-openapi.json"
+  ]
+ },
+ {
+  "slug": "delphix",
+  "specs": [
+   "openapi/_original/delphix-continuous-compliance-openapi.yml",
+   "openapi/_original/delphix-continuous-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "deno",
+  "specs": [
+   "openapi/_original/deno-deploy-rest-api-openapi.yml",
+   "openapi/_original/deno-deploy-v2-api-openapi.yml",
+   "openapi/_original/deno-subhosting-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "deployxa",
+  "specs": [
+   "openapi/_original/deployxa-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "depot-dev",
+  "specs": [
+   "openapi/_original/depot-dev-openapi.yml"
+  ]
+ },
+ {
+  "slug": "devcycle",
+  "specs": [
+   "openapi/_original/devcycle-bucketing-openapi.yaml",
+   "openapi/_original/devcycle-management-openapi.json"
+  ]
+ },
+ {
+  "slug": "devtron",
+  "specs": [
+   "openapi/_original/devtron-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "docker",
+  "specs": [
+   "openapi/_original/docker-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docker-hub",
+  "specs": [
+   "openapi/_original/docker-hub-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dokploy",
+  "specs": [
+   "openapi/_original/dokploy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "doppler",
+  "specs": [
+   "openapi/_original/doppler-openapi.json"
+  ]
+ },
+ {
+  "slug": "dream-sports",
+  "specs": [
+   "openapi/_original/dream-sports-checkmate-openapi.yml",
+   "openapi/_original/dream-sports-delivr-ota-openapi.yml",
+   "openapi/_original/dream-sports-dota-openapi.yml",
+   "openapi/_original/dream-sports-guardian-integrations-openapi.yml",
+   "openapi/_original/dream-sports-guardian-openapi.yml",
+   "openapi/_original/dream-sports-raven-journey-openapi.yml",
+   "openapi/_original/dream-sports-thunder-admin-openapi.yml",
+   "openapi/_original/dream-sports-thunder-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "drone",
+  "specs": [
+   "openapi/_original/drone-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "edge-delta",
+  "specs": [
+   "openapi/_original/edge-delta-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "emerge-tools",
+  "specs": [
+   "openapi/_original/emerge-tools-openapi.json"
+  ]
+ },
+ {
+  "slug": "env0",
+  "specs": [
+   "openapi/_original/env0-openapi.yml"
+  ]
+ },
+ {
+  "slug": "esper",
+  "specs": [
+   "openapi/_original/esper-openapi.json"
+  ]
+ },
+ {
+  "slug": "facets",
+  "specs": [
+   "openapi/_original/facets-control-plane-openapi.json",
+   "openapi/_original/facets-control-plane-openapi.yml"
+  ]
+ },
+ {
+  "slug": "firehydrant",
+  "specs": [
+   "openapi/_original/firehydrant-api-openapi.yml",
+   "openapi/_original/firehydrant-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flagsmith",
+  "specs": [
+   "openapi/_original/flagsmith-admin-api-openapi.yml",
+   "openapi/_original/flagsmith-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "fleet",
+  "specs": [
+   "openapi/_original/fleet-premium-openapi.json"
+  ]
+ },
+ {
+  "slug": "flightcontrol",
+  "specs": [
+   "openapi/_original/flightcontrol-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fly-io",
+  "specs": [
+   "openapi/_original/fly-io-openapi.json"
+  ]
+ },
+ {
+  "slug": "forgejo",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "gameye",
+  "specs": [
+   "openapi/_original/gameye-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gitar",
+  "specs": [
+   "openapi/_original/gitar-openapi.json"
+  ]
+ },
+ {
+  "slug": "gitea",
+  "specs": [
+   "openapi/_original/gitea-rest-api-openapi-original.yml",
+   "openapi/_original/gitea-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gitee",
+  "specs": [
+   "openapi/_original/gitee-openapi.yml"
+  ]
+ },
+ {
+  "slug": "github-actions",
+  "specs": [
+   "openapi/_original/github-actions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "github-enterprise",
+  "specs": [
+   "openapi/_original/github-enterprise-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gitlab-ci",
+  "specs": [
+   "openapi/_original/gitlab-ci-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gitpod",
+  "specs": [
+   "openapi/_original/gitpod-environments-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goharbor",
+  "specs": [
+   "openapi/_original/goharbor-harbor-api-v2.0-swagger.yml",
+   "openapi/_original/goharbor-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-apps-script",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-build",
+  "specs": [
+   "openapi/_original/cloud-build-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-container-registry",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-deploy",
+  "specs": [
+   "openapi/_original/cloud-deploy-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-logging",
+  "specs": [
+   "openapi/_original/google-cloud-logging-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gradle",
+  "specs": [
+   "openapi/_original/gradle-develocity-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "harness",
+  "specs": [
+   "openapi/_original/harness-apis-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "hashicorp",
+  "specs": [
+   "openapi/_original/hashicorp-vault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hashicorp-vault",
+  "specs": [
+   "openapi/_original/hashicorp-vault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "helm",
+  "specs": [
+   "openapi/_original/helm-chart-repository-openapi.yml"
+  ]
+ },
+ {
+  "slug": "heroku",
+  "specs": [
+   "openapi/_original/heroku-platform-api.yml"
+  ]
+ },
+ {
+  "slug": "humanitec",
+  "specs": [
+   "openapi/_original/humanitec-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hvault",
+  "specs": [
+   "openapi/_original/hvault-auth-methods-openapi.yml",
+   "openapi/_original/hvault-identity-openapi.yml",
+   "openapi/_original/hvault-secrets-engines-openapi.yml",
+   "openapi/_original/hvault-system-backend-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ibm",
+  "specs": [
+   "openapi/_original/ibm-cloud-iam.yml"
+  ]
+ },
+ {
+  "slug": "ilert",
+  "specs": [
+   "openapi/_original/ilert-ilert-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "infisical",
+  "specs": [
+   "openapi/_original/infisical-openapi.json"
+  ]
+ },
+ {
+  "slug": "influxdata",
+  "specs": [
+   "openapi/_original/influxdata-cloud-openapi-original.yml",
+   "openapi/_original/influxdata-oss-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "jetbrains",
+  "specs": [
+   "openapi/_original/jetbrains-hub-openapi.yml",
+   "openapi/_original/jetbrains-marketplace-openapi.yml",
+   "openapi/_original/jetbrains-space-openapi.yml",
+   "openapi/_original/jetbrains-teamcity-openapi.yml",
+   "openapi/_original/jetbrains-youtrack-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jfrog",
+  "specs": [
+   "openapi/_original/jfrog-access-openapi.yml",
+   "openapi/_original/jfrog-artifactory-openapi.yml",
+   "openapi/_original/jfrog-catalog-openapi.yml",
+   "openapi/_original/jfrog-connect-openapi.yml",
+   "openapi/_original/jfrog-curation-openapi.yml",
+   "openapi/_original/jfrog-distribution-openapi.yml",
+   "openapi/_original/jfrog-evidence-openapi.yml",
+   "openapi/_original/jfrog-mission-control-openapi.yml",
+   "openapi/_original/jfrog-ml-openapi.yml",
+   "openapi/_original/jfrog-pipelines-openapi.yml",
+   "openapi/_original/jfrog-platform-openapi.yml",
+   "openapi/_original/jfrog-release-lifecycle-openapi.yml",
+   "openapi/_original/jfrog-workers-openapi.yml",
+   "openapi/_original/jfrog-xray-openapi.yml"
+  ]
+ },
+ {
+  "slug": "keploy",
+  "specs": [
+   "openapi/_original/keploy-cloud-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "knoxcall",
+  "specs": [
+   "openapi/_original/knoxcall-openapi.json"
+  ]
+ },
+ {
+  "slug": "kondukto",
+  "specs": [
+   "openapi/_original/kondukto-aspm-openapi.yml"
+  ]
+ },
+ {
+  "slug": "koyeb",
+  "specs": [
+   "openapi/_original/koyeb-openapi.json"
+  ]
+ },
+ {
+  "slug": "kubernetes-operators",
+  "specs": [
+   "openapi/_original/kubernetes-olm-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kubeshop",
+  "specs": [
+   "openapi/_original/kubeshop-testkube-agent-openapi-original.yml",
+   "openapi/_original/kubeshop-testkube-control-plane-openapi-original.yml",
+   "openapi/_original/kubeshop-testkube-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "laravel",
+  "specs": [
+   "openapi/_original/laravel-forge-openapi.json",
+   "openapi/_original/laravel-openapi.json"
+  ]
+ },
+ {
+  "slug": "latchkey",
+  "specs": [
+   "openapi/_original/latchkey-jobs-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "launchdarkly",
+  "specs": [
+   "openapi/_original/launchdarkly-dev-server-openapi.yml",
+   "openapi/_original/launchdarkly-openapi.json",
+   "openapi/_original/launchdarkly-relay-proxy-openapi.yml",
+   "openapi/_original/launchdarkly-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lightrun",
+  "specs": [
+   "openapi/_original/lightrun-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "limrun",
+  "specs": [
+   "openapi/_original/limrun-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "linearb",
+  "specs": [
+   "openapi/_original/linearb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "localstack",
+  "specs": [
+   "openapi/_original/localstack-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "mabl",
+  "specs": [
+   "openapi/_original/mabl-openapi.yml"
+  ]
+ },
+ {
+  "slug": "macroscope",
+  "specs": [
+   "openapi/_original/macroscope-webhook-api.json"
+  ]
+ },
+ {
+  "slug": "mailosaur",
+  "specs": [
+   "openapi/_original/mailosaur-mailosaur-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mattermost",
+  "specs": [
+   "openapi/_original/mattermost-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mendix",
+  "specs": [
+   "openapi/_original/mendix-openapi.yml",
+   "openapi/_original/openapi-deploy-v1.yaml"
+  ]
+ },
+ {
+  "slug": "mezmo",
+  "specs": [
+   "openapi/_original/mezmo-alerts-api-openapi.yml",
+   "openapi/_original/mezmo-edge-api-openapi.yml",
+   "openapi/_original/mezmo-ingestion-control-api-openapi.yml",
+   "openapi/_original/mezmo-log-export-api-openapi.yml",
+   "openapi/_original/mezmo-log-ingestion-api-openapi.yml",
+   "openapi/_original/mezmo-pipeline-api-openapi.yml",
+   "openapi/_original/mezmo-pipeline-classification-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microcks",
+  "specs": [
+   "openapi/_original/microcks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-devops",
+  "specs": [
+   "openapi/_original/azure-devops-artifacts-api-openapi.yml",
+   "openapi/_original/azure-devops-builds-api-openapi.yml",
+   "openapi/_original/azure-devops-git-api-openapi.yml",
+   "openapi/_original/azure-devops-pipelines-api-openapi.yml",
+   "openapi/_original/azure-devops-releases-api-openapi.yml",
+   "openapi/_original/azure-devops-service-hooks-api-openapi.yml",
+   "openapi/_original/azure-devops-test-plans-api-openapi.yml",
+   "openapi/_original/azure-devops-wiki-api-openapi.yml",
+   "openapi/_original/azure-devops-work-items-api-openapi.yml",
+   "openapi/_original/microsoft-azure-devops-pipelines-openapi.yml",
+   "openapi/_original/microsoft-azure-devops-work-items-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-kubernetes-service",
+  "specs": [
+   "openapi/_original/azure-kubernetes-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-pipelines",
+  "specs": [
+   "openapi/_original/azure-pipelines-build-api-openapi.yml",
+   "openapi/_original/azure-pipelines-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-repo",
+  "specs": [
+   "openapi/_original/azure-repo-git-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-bicep",
+  "specs": [
+   "openapi/_original/microsoft-bicep-deployments-openapi.yml",
+   "openapi/_original/microsoft-bicep-template-specs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "moogsoft",
+  "specs": [
+   "openapi/_original/moogsoft-alerts-incidents-openapi.yaml",
+   "openapi/_original/moogsoft-azure-service-openapi.yaml",
+   "openapi/_original/moogsoft-byo-api-service-openapi.yaml",
+   "openapi/_original/moogsoft-cloudwatch-service-openapi.yaml",
+   "openapi/_original/moogsoft-collectors-openapi.yaml",
+   "openapi/_original/moogsoft-config-openapi.yaml",
+   "openapi/_original/moogsoft-events-integration-openapi.yaml",
+   "openapi/_original/moogsoft-incident-responder-openapi.yaml",
+   "openapi/_original/moogsoft-metric-processor-openapi.yaml",
+   "openapi/_original/moogsoft-metrics-integration-openapi.yaml",
+   "openapi/_original/moogsoft-pagerduty-service-openapi.yaml",
+   "openapi/_original/moogsoft-probable-rootcause-openapi.yaml",
+   "openapi/_original/moogsoft-similar-incidents-openapi.yaml",
+   "openapi/_original/moogsoft-ui-services-openapi.yaml",
+   "openapi/_original/moogsoft-user-management-openapi.yaml",
+   "openapi/_original/moogsoft-webhook-service-v2-openapi.yaml",
+   "openapi/_original/moogsoft-workflow-engine-service-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "netdata",
+  "specs": [
+   "openapi/_original/netdata-cloud-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "netlify",
+  "specs": [
+   "openapi/_original/netlify-openapi-2.57.0-swagger.json",
+   "openapi/_original/netlify-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "nevercode",
+  "specs": [
+   "openapi/_original/nevercode-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "new-relic",
+  "specs": [
+   "openapi/_original/new-relic-event-api-openapi.yml",
+   "openapi/_original/new-relic-log-api-openapi.yml",
+   "openapi/_original/new-relic-metric-api-openapi.yml",
+   "openapi/_original/new-relic-openapi.yml",
+   "openapi/_original/new-relic-trace-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nomad",
+  "specs": [
+   "openapi/_original/nomad-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nuon",
+  "specs": [
+   "openapi/_original/nuon-oapi-v2-openapi.json",
+   "openapi/_original/nuon-oapi-v3-openapi.json"
+  ]
+ },
+ {
+  "slug": "octopus-deploy",
+  "specs": [
+   "openapi/_original/octopus-deploy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openkruise",
+  "specs": [
+   "openapi/_original/openkruise-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openshift",
+  "specs": [
+   "openapi/_original/openshift-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opslevel",
+  "specs": [
+   "openapi/_original/opslevel-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opsmill",
+  "specs": [
+   "openapi/_original/opsmill-infrahub-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "outsystems",
+  "specs": [
+   "openapi/_original/lifetime-api.json",
+   "openapi/_original/outsystems-asset-configurations-api-v1-openapi.json",
+   "openapi/_original/outsystems-asset-repository-api-v1-openapi.json",
+   "openapi/_original/outsystems-build-operations-api-v1-openapi.json",
+   "openapi/_original/outsystems-code-quality-api-v1-openapi.json",
+   "openapi/_original/outsystems-dependency-management-api-v1-openapi.json",
+   "openapi/_original/outsystems-deployments-api-v1-openapi.json",
+   "openapi/_original/outsystems-environment-configurations-api-v1-openapi.json",
+   "openapi/_original/outsystems-external-library-generation-api-v1-openapi.json",
+   "openapi/_original/outsystems-native-application-orchestration-service-api-v1-openapi.json",
+   "openapi/_original/outsystems-portfolio-api-v1-openapi.json",
+   "openapi/_original/outsystems-portfolio-api-v2-openapi.json",
+   "openapi/_original/outsystems-subscription-api-v1-openapi.json",
+   "openapi/_original/outsystems-user-access-management-api-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "overops",
+  "specs": [
+   "openapi/_original/overops-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "packer",
+  "specs": [
+   "openapi/_original/packer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pagerduty",
+  "specs": [
+   "openapi/_original/pagerduty-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "perforce",
+  "specs": [
+   "openapi/_original/perforce-helix-swarm-openapi.yml"
+  ]
+ },
+ {
+  "slug": "platform.sh",
+  "specs": [
+   "openapi/_original/platform.sh-developer-portal-openapi-original.json",
+   "openapi/_original/platform.sh-openapi-original.json",
+   "openapi/_original/platform.sh-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "podman",
+  "specs": [
+   "openapi/_original/podman-openapi.yml"
+  ]
+ },
+ {
+  "slug": "porter",
+  "specs": [
+   "openapi/_original/porter-bundle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "postman",
+  "specs": [
+   "openapi/_original/postman-api-comments-api-openapi.yml",
+   "openapi/_original/postman-api-openapi.yml",
+   "openapi/_original/postman-api-schemas-api-openapi.yml",
+   "openapi/_original/postman-api-versions-api-openapi.yml",
+   "openapi/_original/postman-apis-api-openapi.yml",
+   "openapi/_original/postman-audit-logs-api-openapi.yml",
+   "openapi/_original/postman-collection-runs-api-openapi.yml",
+   "openapi/_original/postman-collections-api-openapi.yml",
+   "openapi/_original/postman-environments-api-openapi.yml",
+   "openapi/_original/postman-mock-servers-api-openapi.yml",
+   "openapi/_original/postman-mocks-api-openapi.yml",
+   "openapi/_original/postman-monitors-api-openapi.yml",
+   "openapi/_original/postman-network-elements-api-openapi.yml",
+   "openapi/_original/postman-network-folders-api-openapi.yml",
+   "openapi/_original/postman-network-requests-api-openapi.yml",
+   "openapi/_original/postman-private-api-network-api-openapi.yml",
+   "openapi/_original/postman-secret-scanner-api-openapi.yml",
+   "openapi/_original/postman-server-responses-api-openapi.yml",
+   "openapi/_original/postman-tags-api-openapi.yml",
+   "openapi/_original/postman-webhooks-api-openapi.yml",
+   "openapi/_original/postman-workspaces-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "powershell",
+  "specs": [
+   "openapi/_original/powershell-openapi.yml"
+  ]
+ },
+ {
+  "slug": "progress-software",
+  "specs": [
+   "openapi/_original/progress-software-chef-automate-openapi-original.json",
+   "openapi/_original/progress-software-moveit-transfer-openapi-original.json",
+   "openapi/_original/progress-software-whatsup-gold-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "pulumi",
+  "specs": [
+   "openapi/_original/pulumi-openapi.json"
+  ]
+ },
+ {
+  "slug": "puppet",
+  "specs": [
+   "openapi/_original/puppet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rainforest-qa",
+  "specs": [
+   "openapi/_original/rainforest-qa-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "raygun",
+  "specs": [
+   "openapi/_original/raygun-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "red-hat-ansible-automation-platform",
+  "specs": [
+   "openapi/_original/red-hat-ansible-automation-platform-ansible-lightspeed-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-automation-controller-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-automation-hub-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-event-driven-ansible-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-platform-gateway-openapi.json"
+  ]
+ },
+ {
+  "slug": "reflect",
+  "specs": [
+   "openapi/_original/reflect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "release",
+  "specs": [
+   "openapi/_original/release-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "render",
+  "specs": [
+   "openapi/_original/render-openapi.json"
+  ]
+ },
+ {
+  "slug": "replicas",
+  "specs": [
+   "openapi/_original/replicas-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "rollbar",
+  "specs": [
+   "openapi/_original/rollbar-deployment-api-openapi.yml",
+   "openapi/_original/rollbar-metrics-api-openapi.yml",
+   "openapi/_original/rollbar-rest-api-openapi.yml",
+   "openapi/_original/rollbar-rql-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "routebase",
+  "specs": [
+   "openapi/_original/routebase-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "rundeck",
+  "specs": [
+   "openapi/_original/rundeck-openapi.yml"
+  ]
+ },
+ {
+  "slug": "runwhen",
+  "specs": [
+   "openapi/_original/runwhen-papi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "sauce-labs",
+  "specs": [
+   "openapi/_original/sauce-labs-jobs-openapi.yml",
+   "openapi/_original/sauce-labs-real-device-access-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scalable-inference-serving",
+  "specs": [
+   "openapi/_original/kserve-open-inference-protocol-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scalable-infrastructure",
+  "specs": [
+   "openapi/_original/scalable-infrastructure-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scalable-platforms",
+  "specs": [
+   "openapi/_original/scalable-platforms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scale3",
+  "specs": [
+   "openapi/_original/scale3-blockchain-intelligence-openapi.yml"
+  ]
+ },
+ {
+  "slug": "securden",
+  "specs": [
+   "openapi/_original/securden-password-retrieval-openapi.yml"
+  ]
+ },
+ {
+  "slug": "semaphore",
+  "specs": [
+   "openapi/_original/semaphore-semaphore-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sevalla",
+  "specs": [
+   "openapi/_original/sevalla-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signadot",
+  "specs": [
+   "openapi/_original/signadot-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "signl4",
+  "specs": [
+   "openapi/_original/signl4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sleuth",
+  "specs": [
+   "openapi/_original/sleuth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sonar",
+  "specs": [
+   "openapi/_original/sonar-sonarcloud-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sonarqube",
+  "specs": [
+   "openapi/_original/sonarqube-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sonatype-nexus",
+  "specs": [
+   "openapi/_original/sonatype-nexus-repository-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spacelift",
+  "specs": [
+   "openapi/_original/spacelift-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spectro-cloud",
+  "specs": [
+   "openapi/_original/spectro-cloud-edge-management-openapi.json",
+   "openapi/_original/spectro-cloud-palette-openapi.json",
+   "openapi/_original/spectrocloud-palette.yaml"
+  ]
+ },
+ {
+  "slug": "spike-sh",
+  "specs": [
+   "openapi/_original/spike-sh-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spinnaker",
+  "specs": [
+   "openapi/_original/spinnaker-gate-openapi.yml"
+  ]
+ },
+ {
+  "slug": "squadcast",
+  "specs": [
+   "openapi/_original/squadcast-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stakpak",
+  "specs": [
+   "openapi/_original/stakpak-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sumo-logic",
+  "specs": [
+   "openapi/_original/sumo-logic-openapi.yml"
+  ]
+ },
+ {
+  "slug": "taskcall",
+  "specs": [
+   "openapi/_original/taskcall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "teamcity",
+  "specs": [
+   "openapi/_original/teamcity-rest-api.yml"
+  ]
+ },
+ {
+  "slug": "tekton",
+  "specs": [
+   "openapi/_original/tekton-pipeline-openapi.json"
+  ]
+ },
+ {
+  "slug": "terminal-use",
+  "specs": [
+   "openapi/_original/terminal-use-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "termius",
+  "specs": [
+   "openapi/_original/api-doc.yml",
+   "openapi/_original/termius-api-bridge-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "terraform",
+  "specs": [
+   "openapi/_original/hcp-terraform-openapi.yml",
+   "openapi/_original/terraform-registry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "test-driven-development",
+  "specs": [
+   "openapi/_original/test-driven-development-openapi.yml"
+  ]
+ },
+ {
+  "slug": "test-scripts",
+  "specs": [
+   "openapi/_original/test-scripts-openapi.yml"
+  ]
+ },
+ {
+  "slug": "testerarmy",
+  "specs": [
+   "openapi/_original/testerarmy-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "testim-io",
+  "specs": [
+   "openapi/_original/testim-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "testmail-app",
+  "specs": [
+   "openapi/_original/testmail-app-json-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "testmo",
+  "specs": [
+   "openapi/_original/testmo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "traversal",
+  "specs": [
+   "openapi/_original/traversal-sessions-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "travis-ci",
+  "specs": [
+   "openapi/_original/travis-ci-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tricentis",
+  "specs": [
+   "openapi/_original/tricentis-neoload-openapi.yaml",
+   "openapi/_original/tricentis-qtest-analytics-openapi.json",
+   "openapi/_original/tricentis-qtest-data-export-openapi.yaml",
+   "openapi/_original/tricentis-qtest-manager-openapi.yaml",
+   "openapi/_original/tricentis-qtest-parameters-openapi.yaml",
+   "openapi/_original/tricentis-qtest-pulse-openapi.yaml",
+   "openapi/_original/tricentis-qtest-sessions-openapi.yaml",
+   "openapi/_original/tricentis-ttm4j-openapi.json"
+  ]
+ },
+ {
+  "slug": "trunk",
+  "specs": [
+   "openapi/_original/trunk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "turborepo",
+  "specs": [
+   "openapi/_original/turborepo-remote-cache-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ubuntu",
+  "specs": [
+   "openapi/_original/ubuntu-cve-openapi.yml",
+   "openapi/_original/ubuntu-launchpad-openapi.yml",
+   "openapi/_original/ubuntu-snap-store-openapi.yml"
+  ]
+ },
+ {
+  "slug": "upsun",
+  "specs": [
+   "openapi/_original/upsun-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "uptimerobot",
+  "specs": [
+   "openapi/_original/uptimerobot-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "v12",
+  "specs": [
+   "openapi/_original/v12-openapi.json"
+  ]
+ },
+ {
+  "slug": "vagrant",
+  "specs": [
+   "openapi/_original/vagrant-cloud-api-openapi.yml",
+   "openapi/_original/vagrant-hcp-vagrant-box-registry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vellum",
+  "specs": [
+   "openapi/_original/vellum-openapi.json"
+  ]
+ },
+ {
+  "slug": "venafi",
+  "specs": [
+   "openapi/_original/venafi-certificate-manager-saas-openapi.json",
+   "openapi/_original/venafi-certificate-manager-saas-openapi.yml",
+   "openapi/_original/venafi-trust-protection-foundation-websdk-openapi.json",
+   "openapi/_original/venafi-trust-protection-foundation-websdk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vercel",
+  "specs": [
+   "openapi/_original/vercel-ai-gateway-openapi.yml",
+   "openapi/_original/vercel-v0-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vers",
+  "specs": [
+   "openapi/_original/vers-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "woodpecker-ci",
+  "specs": [
+   "openapi/_original/woodpecker-ci-server-swagger.json"
+  ]
+ },
+ {
+  "slug": "zenduty",
+  "specs": [
+   "openapi/_original/zenduty-openapi.json"
+  ]
+ },
+ {
+  "slug": "zippykid",
+  "specs": [
+   "openapi/_original/zippykid-pressable-openapi-original.json"
+  ]
+ }
+]
